@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5795,        182]
+NotebookOptionsPosition[      4921,        155]
+NotebookOutlinePosition[      5328,        171]
+CellTagsIndexPosition[      5285,        168]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Summary of chapter 2 is at here.\
+\>", "Text",
+ CellChangeTimes->{{3.660167082678168*^9, 3.660167083587244*^9}}],
+
+Cell["\<\
+Chapter 2 is a technical one, discussing how things can be calculated, \
+analyzed. For these how-tos, the main ones are listed as follow, following \
+each point, the section discussing it is attached. Before these, basic \
+conceptions are listed first.\
+\>", "Text",
+ CellChangeTimes->{{3.66016705358445*^9, 3.660167163044032*^9}, {
+  3.660167432637199*^9, 3.660167452753923*^9}}],
+
+Cell["\<\
+Conceptions of Wirtinger\[CloseCurlyQuote]s calculus. (sec. 2.1.)\
+\>", "Item1Numbered",
+ CellChangeTimes->{{3.660167185496738*^9, 3.660167242368653*^9}, {
+  3.660167324716478*^9, 3.660167327037264*^9}}],
+
+Cell["\<\
+Conception of path integral equation (PIE). (Or, operator equation in the \
+book. But this name is improper.) (sec. 2.1.)\
+\>", "Item1Numbered",
+ CellChangeTimes->{{3.660167250040679*^9, 3.660167329084228*^9}}],
+
+Cell[TextData[{
+ "Two important PIEs are derived, of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["X", "\[Mu]"], "(", 
+    RowBox[{"z", ",", 
+     OverscriptBox["z", "_"]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["X", "\[Mu]"], "(", 
+     RowBox[{"z", ",", 
+      OverscriptBox["z", "_"]}], ")"}], " ", 
+    RowBox[{
+     SuperscriptBox["X", "\[Mu]"], "(", 
+     RowBox[{
+      SuperscriptBox["z", "\[Prime]"], ",", 
+      SuperscriptBox[
+       OverscriptBox["z", "_"], "\[Prime]"]}], ")"}]}], TraditionalForm]]],
+ "."
+}], "Item1Numbered",
+ CellChangeTimes->{{3.660167335973827*^9, 3.660167397253491*^9}}],
+
+Cell["Conception of normal-order.", "Item1Numbered",
+ CellChangeTimes->{{3.660167399224777*^9, 3.66016740687963*^9}, {
+  3.660167464009696*^9, 3.660167476244325*^9}, {3.660168263467766*^9, 
+  3.660168278246287*^9}}],
+
+Cell["Conception of central charge.", "Item1Numbered",
+ CellChangeTimes->{{3.6601682787046*^9, 3.660168292385027*^9}}],
+
+Cell["\<\
+Conception of Virasoro algebra.\
+\>", "Item1Numbered",
+ CellChangeTimes->{{3.660168264119402*^9, 3.660168295008145*^9}}],
+
+Cell["\<\
+Conception of operator form - path integral from correspondence.\
+\>", "Item1Numbered",
+ CellChangeTimes->{{3.660168296271672*^9, 3.66016831661156*^9}}],
+
+Cell["And the how-tos:", "Text",
+ CellChangeTimes->{{3.660167211750908*^9, 3.660167219697704*^9}, {
+  3.660167478933633*^9, 3.660167485062839*^9}}],
+
+Cell["\<\
+Calculation of OPE by normal-order. (sec. 2.2.)\
+\>", "Item1Numbered",
+ CellChangeTimes->{{3.66016749028863*^9, 3.660167562413476*^9}, {
+  3.660167695530416*^9, 3.660167700176625*^9}}],
+
+Cell[TextData[{
+ "Calculate ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]", " ", "\[ScriptCapitalA]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " where ",
+ Cell[BoxData[
+  FormBox["\[ScriptCapitalA]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is any operator that either can be expressed by configuration (i.e. ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["X", "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") or with a known weight with respect to any conformal transform of \
+coordinates of world-sheet. Specially the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]", " ", "T"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". (sec. 2.4.)"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.660167611166956*^9, 3.660167796766904*^9}, {
+  3.660167848282164*^9, 3.660167902551353*^9}}],
+
+Cell["\<\
+Calculate commutator under path integral. Specially the Virasoro algebra. \
+(sec. 2.6.)\
+\>", "Item1Numbered",
+ CellChangeTimes->{{3.660167917346127*^9, 3.660167979781155*^9}}],
+
+Cell[TextData[{
+ "Operator form - path integral form correspondence. As applications: mode \
+operator ",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["\[Alpha]", "m", "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is mapped to path integral form; and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"|", "1"}], "\[RightAngleBracket]"}], "=", 
+      RowBox[{"|", "0"}]}], ",", "0"}], "\[RightAngleBracket]"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is derived. (sec. 2.7 ~ 2.8.)"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.660168017824401*^9, 3.660168252488253*^9}}]
+},
+WindowSize->{1024, 600},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 122, 3, 23, "Text"],
+Cell[682, 25, 390, 7, 41, "Text"],
+Cell[1075, 34, 213, 4, 18, "Item1Numbered"],
+Cell[1291, 40, 220, 4, 18, "Item1Numbered"],
+Cell[1514, 46, 726, 25, 19, "Item1Numbered"],
+Cell[2243, 73, 215, 3, 18, "Item1Numbered"],
+Cell[2461, 78, 118, 1, 18, "Item1Numbered"],
+Cell[2582, 81, 130, 3, 18, "Item1Numbered"],
+Cell[2715, 86, 162, 3, 18, "Item1Numbered"],
+Cell[2880, 91, 147, 2, 22, "Text"],
+Cell[3030, 95, 194, 4, 18, "Item1Numbered"],
+Cell[3227, 101, 841, 24, 34, "Item1Numbered"],
+Cell[4071, 127, 186, 4, 18, "Item1Numbered"],
+Cell[4260, 133, 657, 20, 35, "Item1Numbered"]
+}
+]
+*)
+
+(* End of internal cache information *)
