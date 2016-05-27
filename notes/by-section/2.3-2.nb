@@ -1,0 +1,1056 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     34619,       1047]
+NotebookOptionsPosition[     32193,        977]
+NotebookOutlinePosition[     32701,        995]
+CellTagsIndexPosition[     32658,        992]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["1 Instance of Symmetry", "Section",
+ CellChangeTimes->{{3.673307794167434*^9, 3.673307821211214*^9}, {
+  3.673307869746664*^9, 3.673307872145911*^9}, {3.673308142246643*^9, 
+  3.673308142573994*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Following, consider Lorentz symmetry, which is a ",
+ StyleBox["global",
+  FontVariations->{"Underline"->True}],
+ " symmetry."
+}], "Text",
+ CellChangeTimes->{{3.673307825890391*^9, 3.673307836405194*^9}, {
+  3.673307882679306*^9, 3.673307941156781*^9}}],
+
+Cell[TextData[{
+ StyleBox["1.1",
+  FontWeight->"Bold"],
+ " Consider action"
+}], "Text",
+ CellChangeTimes->{{3.673307949403375*^9, 3.673307957027466*^9}, {
+  3.673308146733605*^9, 3.673308146837451*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{
+       RowBox[{"S", "[", "\[Phi]", "]"}], "=", 
+       RowBox[{
+        SubscriptBox["\[Integral]", 
+         SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+         RowBox[{"\[ScriptCapitalL]", "(", 
+          RowBox[{
+           RowBox[{"\[Phi]", "(", "x", ")"}], ",", 
+           RowBox[{"\[PartialD]", 
+            RowBox[{"\[Phi]", "(", "x", ")"}]}]}], ")"}]}]}]}], " ", ";"}]},
+    {
+     RowBox[{
+      RowBox[{"\[ScriptCapitalL]", "(", 
+       RowBox[{
+        RowBox[{"\[Phi]", "(", "x", ")"}], ",", 
+        RowBox[{"\[PartialD]", 
+         RowBox[{"\[Phi]", "(", "x", ")"}]}]}], ")"}], "=", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Mu]"], 
+        RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Nu]"], 
+         RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", "."}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673307967447917*^9, 3.673308000365582*^9}, {
+  3.67330835923882*^9, 3.673308362578745*^9}, {3.67330926411677*^9, 
+  3.673309323434113*^9}, {3.673310203573663*^9, 3.673310205184799*^9}}],
+
+Cell["Consider transform", "Text",
+ CellChangeTimes->{{3.673308009979266*^9, 3.673308011661048*^9}, {
+  3.673308171198616*^9, 3.67330817349134*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["x", "\[Prime]"], "=", 
+       RowBox[{
+        RowBox[{"\[CapitalLambda]", " ", "x"}], "+", "a"}]}], " ", ";"}]},
+    {
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+       SuperscriptBox["x", "\[Prime]"], ")"}], "=", 
+      RowBox[{"\[Phi]", "(", "x", ")"}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673308044107535*^9, 3.673308084584599*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.2",
+  FontWeight->"Bold"],
+ "  This transform makes a symmetry on ",
+ Cell[BoxData[
+  FormBox["S", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.673308132175542*^9, 3.673308217015752*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"S", "[", 
+    RowBox[{"\[Phi]", "'"}], "]"}], "=", 
+   RowBox[{"S", "[", "\[Phi]", "]"}]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.673308220388284*^9, 3.673308230350998*^9}, {
+  3.673308297868298*^9, 3.673308299314187*^9}}],
+
+Cell[TextData[{
+ "(Remark that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"S", "[", 
+    RowBox[{"\[Phi]", "'"}], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is just a symbol-replacement ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Phi]", "\[Rule]", 
+    SuperscriptBox["\[Phi]", "\[Prime]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"S", "[", "\[Phi]", "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ".) Verily,"
+}], "Text",
+ CellChangeTimes->{{3.673308232642729*^9, 3.673308313009284*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"S", "[", 
+      SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], "=", 
+     RowBox[{
+      FractionBox["1", "2"], " ", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], 
+         RowBox[{
+          SuperscriptBox["\[Phi]", "\[Prime]"], "(", "x", ")"}]}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Nu]"], 
+         RowBox[{
+          SuperscriptBox["\[Phi]", "\[Prime]"], "(", "x", ")"}]}]}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      FractionBox["1", "2"], " ", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], 
+         SuperscriptBox["x", "\[Prime]"]}], " ", 
+        SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+        RowBox[{
+         SubscriptBox[
+          SuperscriptBox["\[PartialD]", "\[Prime]"], "\[Mu]"], 
+         RowBox[{
+          SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+          SuperscriptBox["x", "\[Prime]"], ")"}]}], " ", 
+        RowBox[{
+         SubscriptBox[
+          SuperscriptBox["\[PartialD]", "\[Prime]"], "\[Nu]"], 
+         RowBox[{
+          SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+          SuperscriptBox["x", "\[Prime]"], ")"}]}]}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{
+        SubscriptBox["\[Integral]", 
+         SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+         SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+         RowBox[{
+          SubscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+         RowBox[{"(", "x", ")"}], " ", 
+         RowBox[{
+          SubscriptBox["\[PartialD]", "\[Nu]"], "\[Phi]"}], 
+         RowBox[{"(", "x", ")"}]}]}]}], " ", ","}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673308320613204*^9, 3.673308455012166*^9}, {
+  3.673308596196852*^9, 3.673308596317324*^9}, {3.67331021165094*^9, 
+  3.673310214255514*^9}}],
+
+Cell[TextData[{
+ "where in the second line perform a re-denotion of dummy ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and in the last line perform integral transform from ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "\[Prime]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and employ ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+     SuperscriptBox["x", "\[Prime]"], ")"}], "=", 
+    RowBox[{"\[Phi]", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.673308463749695*^9, 3.673308593130733*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.3",
+  FontWeight->"Bold"],
+ " Now, the symmetry has been checked, via a trick of integral transform. \
+Also, we can do it in another way, that is, directly plugging ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[Phi]", "\[Prime]"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " into ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"S", "[", ".", "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". This ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[Phi]", "\[Prime]"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is calculated by the transform. By the checked symmetry, we can gain \
+something not that obvious. ",
+ StyleBox["This is a general trick of using symmetry.",
+  FontVariations->{"Underline"->True}]
+}], "Text",
+ CellChangeTimes->{{3.673308625371208*^9, 3.673308814689461*^9}, {
+  3.67330935977999*^9, 3.673309397423481*^9}, {3.673309434863333*^9, 
+  3.673309478610703*^9}, {3.673309686939762*^9, 3.673309730270489*^9}, {
+  3.67331163452524*^9, 3.67331169394318*^9}}],
+
+Cell["\<\
+First restrict consideration to a tiny transform\
+\>", "Text",
+ CellChangeTimes->{{3.673308625371208*^9, 3.673308814689461*^9}, {
+  3.67330935977999*^9, 3.673309397423481*^9}, {3.673309434863333*^9, 
+  3.673309478610703*^9}, {3.673309686939762*^9, 3.673309730270489*^9}, {
+  3.67331163452524*^9, 3.673311639892908*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"\[CapitalLambda]", "=", "\[DoubleStruckOne]"}], " ", ";"}]},
+    {
+     RowBox[{"a", "=", 
+      RowBox[{"0", "+", 
+       RowBox[{"\[Delta]a", " ", "."}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673309482660256*^9, 3.673309509583423*^9}, {
+   3.673309651646851*^9, 3.67330965925671*^9}, {3.673309737717071*^9, 
+   3.673309738539824*^9}, 3.673309768869229*^9}],
+
+Cell["Then,", "Text",
+ CellChangeTimes->{{3.673309781609221*^9, 3.673309782734847*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SuperscriptBox["x", "\[Prime]"], "=", 
+   RowBox[{"x", "+", 
+    RowBox[{"\[Delta]a", " ", "."}]}]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.673309789565*^9, 3.6733098048987*^9}}],
+
+Cell[TextData[{
+ "Define variation of function-form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], ":=", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Phi]", "\[Prime]"], "(", "x", ")"}], "-", 
+     RowBox[{"\[Phi]", "(", "x", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.673309514783429*^9, 3.673309578178589*^9}, {
+  3.673309741641741*^9, 3.673309760002149*^9}, {3.673311379382884*^9, 
+  3.673311380186788*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], "=", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+       RowBox[{
+        SuperscriptBox["x", "\[Prime]"], "-", "\[Delta]a"}], ")"}], "-", 
+      RowBox[{"\[Phi]", "(", "x", ")"}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Alpha]"], 
+        RowBox[{
+         SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+         SuperscriptBox["x", "\[Prime]"], ")"}]}]}], " ", 
+      SuperscriptBox["\[Delta]a", "\[Alpha]"]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Alpha]"], 
+         RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+       SuperscriptBox["\[Delta]a", "\[Alpha]"]}], " ", ","}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673309590858052*^9, 3.67330961927467*^9}, {
+  3.673309663325117*^9, 3.673309670708664*^9}, {3.673309808677592*^9, 
+  3.673309894476626*^9}, {3.673309940227865*^9, 3.673309969516024*^9}}],
+
+Cell[TextData[{
+ "where  in the second line employ ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+     SuperscriptBox["x", "\[Prime]"], ")"}], "=", 
+    RowBox[{"\[Phi]", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", in the last line approximate up to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalO]", "(", 
+    SuperscriptBox["\[Delta]a", "1"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Suppose ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Phi]", "(", "x", ")"}], "=", 
+    RowBox[{"\[ScriptCapitalO]", "(", "1", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is tiny. So, expand ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"S", "[", 
+    SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", up to the leading order,"
+}], "Text",
+ CellChangeTimes->{{3.673309970721882*^9, 3.673310191139168*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"S", "[", 
+      SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], "=", 
+     RowBox[{
+      RowBox[{"S", "[", "\[Phi]", "]"}], "+", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+        RowBox[{"(", "x", ")"}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Nu]"], "\[Delta]\[Phi]"}], 
+        RowBox[{"(", "x", ")"}]}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"S", "[", "\[Phi]", "]"}], "+", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+        RowBox[{"(", "x", ")"}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Nu]"], 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            RowBox[{
+             SubscriptBox["\[PartialD]", "\[Alpha]"], 
+             RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+           SuperscriptBox["\[Delta]a", "\[Alpha]"]}], ")"}]}]}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"S", "[", "\[Phi]", "]"}], "-", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        RowBox[{
+         SuperscriptBox["\[PartialD]", "\[Mu]"], 
+         RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], 
+         RowBox[{
+          SubscriptBox["\[PartialD]", "\[Alpha]"], 
+          RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+        SuperscriptBox["\[Delta]a", "\[Alpha]"]}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310166183032*^9, 3.673310196321217*^9}, {
+  3.673310226572979*^9, 3.673310359119504*^9}}],
+
+Cell["\<\
+While, the checked symmetry always ensures\
+\>", "Text",
+ CellChangeTimes->{{3.673308625371208*^9, 3.673308814689461*^9}, {
+  3.67330935977999*^9, 3.673309397423481*^9}, {3.673309434863333*^9, 
+  3.673309435162952*^9}, {3.673310367562098*^9, 3.673310396557084*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"S", "[", 
+     SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], "-", 
+    RowBox[{"S", "[", "\[Phi]", "]"}]}], "=", 
+   RowBox[{"0", " ", "."}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310372211467*^9, 3.673310399088795*^9}}],
+
+Cell[TextData[{
+ "Then we conclude, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ForAll]", "\[Phi]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.673310400188521*^9, 3.673310435554085*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {"0", "=", 
+     RowBox[{
+      SubscriptBox["\[Integral]", 
+       SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+       RowBox[{"(", "x", ")"}], " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Mu]"], 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Alpha]"], "\[Phi]"}]}], 
+       RowBox[{"(", "x", ")"}], " ", 
+       RowBox[{
+        SuperscriptBox["\[Delta]a", "\[Alpha]"], " ", "."}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310437710809*^9, 3.673310459695341*^9}, {
+  3.673310605277602*^9, 3.673310608072319*^9}}],
+
+Cell["\<\
+This is a non-trivial (I mean not that obvious) conclusion.\
+\>", "Text",
+ CellChangeTimes->{{3.673310961608716*^9, 3.673310983373452*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.4",
+  FontWeight->"Bold"],
+ " This conclusion can be easily checked, if suppose ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is compact supported. By"
+}], "Text",
+ CellChangeTimes->{{3.673310488853137*^9, 3.673310532170191*^9}, 
+   3.673310569835006*^9, {3.673310889774055*^9, 3.673310911358984*^9}, {
+   3.673310987971799*^9, 3.673310989078599*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Integral]", 
+      SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+      RowBox[{
+       SuperscriptBox["\[PartialD]", "\[Mu]"], 
+       RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "\[Mu]"], 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Alpha]"], 
+        RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", GridBox[{
+        {
+         SuperscriptBox["\[Delta]a", "\[Alpha]"], "=", 
+         RowBox[{
+          SubscriptBox["\[Integral]", 
+           SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[Alpha]"], 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{
+               SuperscriptBox["\[PartialD]", "\[Mu]"], 
+               RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+              RowBox[{
+               SubscriptBox["\[PartialD]", "\[Mu]"], 
+               RowBox[{"\[Phi]", "(", "x", ")"}]}]}], "]"}]}], " ", 
+           SuperscriptBox["\[Delta]a", "\[Alpha]"]}]}]}
+       }]}]}], "-", 
+    RowBox[{
+     SubscriptBox["\[Integral]", 
+      SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "\[Alpha]"], 
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "\[Mu]"], 
+        RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "\[Mu]"], 
+       RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+      SuperscriptBox["\[Delta]a", "\[Alpha]"]}]}]}], " ", ","}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310542510738*^9, 3.673310638731441*^9}}],
+
+Cell["get", "Text",
+ CellChangeTimes->{{3.673310639686989*^9, 3.673310639876138*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"2", " ", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        RowBox[{
+         SuperscriptBox["\[PartialD]", "\[Mu]"], 
+         RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], 
+         RowBox[{
+          SubscriptBox["\[PartialD]", "\[Alpha]"], 
+          RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+        SuperscriptBox["\[Delta]a", "\[Alpha]"]}]}]}], "=", 
+     RowBox[{
+      SubscriptBox["\[Integral]", 
+       SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Alpha]"], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["\[PartialD]", "\[Mu]"], 
+           RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+          RowBox[{
+           SuperscriptBox["\[PartialD]", "\[Mu]"], 
+           RowBox[{"\[Phi]", "(", "x", ")"}]}]}], ")"}]}], " ", 
+       SuperscriptBox["\[Delta]a", "\[Alpha]"]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      SubscriptBox["\[ContourIntegral]", "bondary"], " ", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Mu]"], 
+        RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "\[Mu]"], 
+        RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+       RowBox[{
+        OverscriptBox["\[Delta]a", "\[RightVector]"], "\[CenterDot]", 
+        RowBox[{"\[DifferentialD]", 
+         OverscriptBox["S", "\[RightVector]"]}]}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310657542586*^9, 3.673310835949686*^9}}],
+
+Cell[TextData[{
+ "which vanishes since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is compact supported. Checked."
+}], "Text",
+ CellChangeTimes->{{3.673310840214144*^9, 3.67331085741562*^9}, {
+  3.673310922089327*^9, 3.673310923970834*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.5",
+  FontWeight->"Bold"],
+ " Another tiny transform is"
+}], "Text",
+ CellChangeTimes->{{3.673311005639987*^9, 3.673311031007025*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"\[CapitalLambda]", "=", 
+       RowBox[{"\[DoubleStruckOne]", "+", "\[Delta]\[CapitalLambda]"}]}], " ",
+       ";"}]},
+    {
+     RowBox[{"a", "=", 
+      RowBox[{"0", " ", "."}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673309482660256*^9, 3.673309509583423*^9}, {
+   3.673309651646851*^9, 3.67330965925671*^9}, {3.673309737717071*^9, 
+   3.673309738539824*^9}, 3.673309768869229*^9, {3.673311093529139*^9, 
+   3.673311106813974*^9}}],
+
+Cell["Then,", "Text",
+ CellChangeTimes->{{3.673309781609221*^9, 3.673309782734847*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SuperscriptBox["x", "\[Prime]"], "=", 
+   RowBox[{"x", "+", 
+    RowBox[{"\[Delta]\[CapitalLambda]", " ", 
+     RowBox[{"x", " ", "."}]}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673309789565*^9, 3.6733098048987*^9}, {
+  3.673311113996473*^9, 3.67331111583256*^9}}],
+
+Cell[TextData[{
+ "To do the same variation on ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as before, it has to assume ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is compact supported, with length of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Supp", "(", "\[Phi]", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " being ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalO]", "(", "1", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Then, define variation of function-form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], ":=", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Phi]", "\[Prime]"], "(", "x", ")"}], "-", 
+     RowBox[{"\[Phi]", "(", "x", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.673309514783429*^9, 3.673309578178589*^9}, {
+  3.673309741641741*^9, 3.673309760002149*^9}, {3.67331114371465*^9, 
+  3.673311244764335*^9}, {3.673311369363715*^9, 3.673311370028085*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], "=", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+       RowBox[{
+        SuperscriptBox["x", "\[Prime]"], "-", 
+        RowBox[{"\[Delta]\[CapitalLambda]", " ", "x"}]}], ")"}], "-", 
+      RowBox[{"\[Phi]", "(", "x", ")"}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Alpha]"], 
+        RowBox[{
+         SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+         SuperscriptBox["x", "\[Prime]"], ")"}]}]}], " ", 
+      SubscriptBox[
+       SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], "\[Beta]"], 
+      " ", 
+      SuperscriptBox["x", "\[Beta]"]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Alpha]"], 
+         RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+       SubscriptBox[
+        SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], "\[Beta]"], 
+       " ", 
+       SuperscriptBox["x", "\[Beta]"]}], " ", ","}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673309590858052*^9, 3.67330961927467*^9}, {
+   3.673309663325117*^9, 3.673309670708664*^9}, {3.673309808677592*^9, 
+   3.673309894476626*^9}, {3.673309940227865*^9, 3.673309969516024*^9}, 
+   3.673311133040009*^9, {3.673311254405688*^9, 3.673311260175431*^9}, {
+   3.673311551698532*^9, 3.673311555172623*^9}}],
+
+Cell[TextData[{
+ "where  in the second line employ ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Phi]", "\[Prime]"], "(", 
+     SuperscriptBox["x", "\[Prime]"], ")"}], "=", 
+    RowBox[{"\[Phi]", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", in the last line approximate up to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalO]", "(", 
+    SuperscriptBox["\[Delta]a", "1"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Suppose ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Phi]", "(", "x", ")"}], "=", 
+    RowBox[{"\[ScriptCapitalO]", "(", "1", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is tiny. So, expand ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"S", "[", 
+    SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]\[Phi]", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", up to the leading order,"
+}], "Text",
+ CellChangeTimes->{{3.673309970721882*^9, 3.673310191139168*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"S", "[", 
+      SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], "=", 
+     RowBox[{
+      RowBox[{"S", "[", "\[Phi]", "]"}], "+", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+        RowBox[{"(", "x", ")"}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Nu]"], "\[Delta]\[Phi]"}], 
+        RowBox[{"(", "x", ")"}]}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"S", "[", "\[Phi]", "]"}], "+", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+        RowBox[{"(", "x", ")"}], " ", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Nu]"], 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            RowBox[{
+             SubscriptBox["\[PartialD]", "\[Alpha]"], 
+             RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+           SubscriptBox[
+            SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], 
+            "\[Beta]"], " ", 
+           SuperscriptBox["x", "\[Beta]"]}], ")"}]}]}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"S", "[", "\[Phi]", "]"}], "-", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+        RowBox[{
+         SuperscriptBox["\[PartialD]", "\[Mu]"], 
+         RowBox[{
+          RowBox[{"\[Phi]", "(", "x", ")"}], " ", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             SubscriptBox["\[PartialD]", "\[Mu]"], 
+             RowBox[{
+              SubscriptBox["\[PartialD]", "\[Alpha]"], 
+              RowBox[{"\[Phi]", "(", "x", ")"}]}]}], " ", 
+            SubscriptBox[
+             SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], 
+             "\[Beta]"], " ", 
+            SuperscriptBox["x", "\[Beta]"]}], "+", 
+           RowBox[{
+            RowBox[{
+             SubscriptBox["\[PartialD]", "\[Mu]"], 
+             RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+            SubscriptBox[
+             SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], 
+             "\[Nu]"]}]}], "]"}]}]}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310166183032*^9, 3.673310196321217*^9}, {
+  3.673310226572979*^9, 3.673310359119504*^9}, {3.673311267783726*^9, 
+  3.673311273962908*^9}, {3.673311451537597*^9, 3.673311510676524*^9}, {
+  3.673311545894215*^9, 3.673311549482589*^9}}],
+
+Cell["\<\
+While, the checked symmetry always ensures\
+\>", "Text",
+ CellChangeTimes->{{3.673308625371208*^9, 3.673308814689461*^9}, {
+  3.67330935977999*^9, 3.673309397423481*^9}, {3.673309434863333*^9, 
+  3.673309435162952*^9}, {3.673310367562098*^9, 3.673310396557084*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"S", "[", 
+     SuperscriptBox["\[Phi]", "\[Prime]"], "]"}], "-", 
+    RowBox[{"S", "[", "\[Phi]", "]"}]}], "=", 
+   RowBox[{"0", " ", "."}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310372211467*^9, 3.673310399088795*^9}}],
+
+Cell[TextData[{
+ "Then we conclude, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ForAll]", "\[Phi]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.673310400188521*^9, 3.673310435554085*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {"0", "=", 
+     RowBox[{
+      SubscriptBox["\[Integral]", 
+       SuperscriptBox["\[DoubleStruckCapitalR]", "4"]], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", "4"], "x"}], " ", 
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "\[Mu]"], "\[Phi]"}], 
+       RowBox[{
+        RowBox[{"(", "x", ")"}], " ", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           SubscriptBox["\[PartialD]", "\[Mu]"], 
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[Alpha]"], "\[Phi]"}]}], 
+          RowBox[{"(", "x", ")"}], " ", 
+          SubscriptBox[
+           SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], "\[Beta]"],
+           " ", 
+          SuperscriptBox["x", "\[Beta]"]}], "+", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["\[PartialD]", "\[Mu]"], 
+           RowBox[{"\[Phi]", "(", "x", ")"}]}], " ", 
+          SubscriptBox[
+           SuperscriptBox["\[Delta]\[CapitalLambda]", "\[Alpha]"], 
+           "\[Nu]"]}]}], "]"}]}]}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673310437710809*^9, 3.673310459695341*^9}, {
+  3.673310605277602*^9, 3.673310608072319*^9}, {3.673311280575339*^9, 
+  3.673311333844108*^9}, {3.673311522413996*^9, 3.673311536612127*^9}}],
+
+Cell["\<\
+This is a non-trivial (I mean not that obvious) conclusion.\
+\>", "Text",
+ CellChangeTimes->{{3.673310961608716*^9, 3.673310983373452*^9}}]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{1024, 549},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 205, 3, 63, "Section"],
+Cell[CellGroupData[{
+Cell[809, 29, 270, 7, 28, "Text"],
+Cell[1082, 38, 202, 6, 28, "Text"],
+Cell[1287, 46, 1387, 37, 73, "EquationNumbered"],
+Cell[2677, 85, 148, 2, 28, "Text"],
+Cell[2828, 89, 498, 15, 59, "EquationNumbered"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3363, 109, 263, 9, 25, "Text"],
+Cell[3629, 120, 294, 8, 37, "EquationNumbered"],
+Cell[3926, 130, 579, 20, 30, "Text"],
+Cell[4508, 152, 2403, 65, 109, "EquationNumbered"],
+Cell[6914, 219, 771, 25, 52, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[7722, 249, 1099, 29, 71, "Text"],
+Cell[8824, 280, 329, 6, 28, "Text"],
+Cell[9156, 288, 460, 12, 57, "EquationNumbered"],
+Cell[9619, 302, 87, 1, 28, "Text"],
+Cell[9709, 305, 241, 7, 35, "EquationNumbered"],
+Cell[9953, 314, 518, 15, 30, "Text"],
+Cell[10474, 331, 1132, 30, 81, "EquationNumbered"],
+Cell[11609, 363, 1260, 41, 62, "Text"],
+Cell[12872, 406, 2301, 62, 97, "EquationNumbered"],
+Cell[15176, 470, 275, 5, 28, "Text"],
+Cell[15454, 477, 307, 8, 39, "EquationNumbered"],
+Cell[15764, 487, 236, 8, 30, "Text"],
+Cell[16003, 497, 787, 21, 41, "EquationNumbered"],
+Cell[16793, 520, 149, 3, 28, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16979, 528, 457, 12, 27, "Text"],
+Cell[17439, 542, 1971, 54, 57, "EquationNumbered"],
+Cell[19413, 598, 85, 1, 28, "Text"],
+Cell[19501, 601, 1892, 51, 74, "EquationNumbered"],
+Cell[21396, 654, 319, 9, 30, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[21752, 668, 163, 5, 25, "Text"],
+Cell[21918, 675, 532, 14, 57, "EquationNumbered"],
+Cell[22453, 691, 87, 1, 28, "Text"],
+Cell[22543, 694, 328, 8, 35, "EquationNumbered"],
+Cell[22874, 704, 1175, 35, 54, "Text"],
+Cell[24052, 741, 1501, 39, 88, "EquationNumbered"],
+Cell[25556, 782, 1260, 41, 62, "Text"],
+Cell[26819, 825, 3052, 80, 97, "EquationNumbered"],
+Cell[29874, 907, 275, 5, 28, "Text"],
+Cell[30152, 914, 307, 8, 39, "EquationNumbered"],
+Cell[30462, 924, 236, 8, 30, "Text"],
+Cell[30701, 934, 1312, 34, 41, "EquationNumbered"],
+Cell[32016, 970, 149, 3, 28, "Text"]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
