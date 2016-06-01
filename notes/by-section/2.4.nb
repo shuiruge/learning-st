@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     40571,       1327]
-NotebookOptionsPosition[     37186,       1229]
-NotebookOutlinePosition[     37697,       1247]
-CellTagsIndexPosition[     37654,       1244]
+NotebookDataLength[     41003,       1336]
+NotebookOptionsPosition[     37560,       1235]
+NotebookOutlinePosition[     38057,       1253]
+CellTagsIndexPosition[     38014,       1250]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,38 +33,49 @@ Cell[TextData[{
   3.673473791445709*^9, 3.673473813781064*^9}, {3.673480623996675*^9, 
   3.673480624392549*^9}}],
 
+Cell[CellGroupData[{
+
 Cell[TextData[{
  StyleBox["1.1",
   FontWeight->"Bold"],
  " The relation between ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["T", "ab"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["T", "ab"], TraditionalForm]]],
  " in ",
  Cell[BoxData[
-  FormBox["\[Sigma]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Sigma]", TraditionalForm]]],
  "-coordinates and that in ",
  Cell[BoxData[
   FormBox[
    RowBox[{"(", 
     RowBox[{"z", ",", 
-     OverscriptBox["z", "_"]}], ")"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     OverscriptBox["z", "_"]}], ")"}], TraditionalForm]]],
  "-coordinates is checked by direct calculation from both side, ",
  StyleBox["if regard ",
   FontVariations->{"Underline"->True}],
  Cell[BoxData[
   FormBox[
    SubscriptBox["T", "ab"], TraditionalForm]],
+  FontVariations->{"Underline"->True}],
+ StyleBox[" transforms as a tensor under this coordinate-transform. But, ",
+  FontVariations->{"Underline"->True}],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\[Alpha]\[Beta]"], TraditionalForm]],
   FormatType->"TraditionalForm",
   FontVariations->{"Underline"->True}],
- StyleBox[" transforms as a tensor under this coordinate-transform.",
+ StyleBox[" looks transforming as non-tensor, c.f. equ.(2.4.23).",
   FontVariations->{"Underline"->True}]
 }], "Text",
  CellChangeTimes->{{3.673474484893106*^9, 3.673474548140178*^9}, {
-  3.673474583365095*^9, 3.673474633176129*^9}}],
+  3.673474583365095*^9, 3.673474633176129*^9}, {3.673770885430641*^9, 
+  3.67377091166334*^9}, {3.673771001002282*^9, 3.673771007023121*^9}, {
+  3.673771050894196*^9, 3.673771050927009*^9}}],
+
+Cell["This is a left problem.", "Text",
+ CellChangeTimes->{{3.673771051453698*^9, 3.673771057823291*^9}}]
+}, Open  ]],
 
 Cell[TextData[{
  StyleBox["1.2",
@@ -73,11 +84,11 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    SubscriptBox["T", "ab"], TraditionalForm]]],
- " in equ.(2.3.15) and equ.(2.4.4) are both problems left. Discussion is \
-needed."
+ " in equ.(2.3.15) and equ.(2.4.4) are gained in 2.3.nb, 5 and 5.4 therein."
 }], "Text",
  CellChangeTimes->{{3.673474658259051*^9, 3.673474737467613*^9}, {
-  3.673474797084733*^9, 3.673474798835234*^9}}],
+  3.673474797084733*^9, 3.673474798835234*^9}, {3.673770831956841*^9, 
+  3.673770864200532*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1196,14 +1207,9 @@ Cell[TextData[{
 }], "Text",
  CellChangeTimes->{{3.673515918363039*^9, 3.673515928364678*^9}}],
 
-Cell[TextData[{
- "1) deriving ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["T", "ab"], TraditionalForm]]],
- " in both equ.(2.3.15) and equ.(2.4.4), c.f. 1.2."
-}], "Text",
- CellChangeTimes->{{3.673516152755126*^9, 3.673516193869515*^9}}],
+Cell["1) c.f. 1.1.", "Text",
+ CellChangeTimes->{{3.673516152755126*^9, 3.673516193869515*^9}, {
+  3.673771025113962*^9, 3.673771029038525*^9}}],
 
 Cell[TextData[{
  "2) how to calculate the Jacobian ",
@@ -1228,7 +1234,7 @@ Cell["\<\
 }, Closed]]
 },
 WindowSize->{1024, 600},
-WindowMargins->{{-1, Automatic}, {Automatic, -22}},
+WindowMargins->{{-2, 0}, {-13, -44}},
 Magnification:>FEPrivate`If[
   FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
 FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
@@ -1248,86 +1254,89 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[579, 22, 351, 11, 30, "Text"],
-Cell[933, 35, 989, 31, 54, "Text"],
-Cell[1925, 68, 364, 11, 30, "Text"],
 Cell[CellGroupData[{
-Cell[2314, 83, 1022, 30, 55, "Theorem"],
-Cell[3339, 115, 677, 19, 38, "EquationNumbered"],
+Cell[955, 37, 1272, 36, 78, "Text"],
+Cell[2230, 75, 105, 1, 28, "Text"]
+}, Open  ]],
+Cell[2350, 79, 406, 11, 30, "Text"],
 Cell[CellGroupData[{
-Cell[4041, 138, 589, 19, 28, "Proof"],
-Cell[4633, 159, 947, 27, 60, "EquationNumbered"],
-Cell[5583, 188, 88, 1, 28, "Proof"],
-Cell[5674, 191, 1502, 43, 64, "EquationNumbered"],
-Cell[7179, 236, 417, 14, 28, "Proof"],
-Cell[7599, 252, 431, 12, 40, "EquationNumbered"],
-Cell[8033, 266, 1207, 40, 35, "Proof"],
-Cell[9243, 308, 397, 12, 40, "EquationNumbered"],
-Cell[9643, 322, 415, 13, 28, "Proof"],
-Cell[10061, 337, 696, 19, 50, "EquationNumbered"],
-Cell[10760, 358, 105, 1, 35, "Proof"],
-Cell[10868, 361, 86, 1, 36, "QED"]
+Cell[2781, 94, 1022, 30, 55, "Theorem"],
+Cell[3806, 126, 677, 19, 47, "EquationNumbered"],
+Cell[CellGroupData[{
+Cell[4508, 149, 589, 19, 35, "Proof"],
+Cell[5100, 170, 947, 27, 75, "EquationNumbered"],
+Cell[6050, 199, 88, 1, 35, "Proof"],
+Cell[6141, 202, 1502, 43, 80, "EquationNumbered"],
+Cell[7646, 247, 417, 14, 35, "Proof"],
+Cell[8066, 263, 431, 12, 50, "EquationNumbered"],
+Cell[8500, 277, 1207, 40, 43, "Proof"],
+Cell[9710, 319, 397, 12, 50, "EquationNumbered"],
+Cell[10110, 333, 415, 13, 35, "Proof"],
+Cell[10528, 348, 696, 19, 62, "EquationNumbered"],
+Cell[11227, 369, 105, 1, 43, "Proof"],
+Cell[11335, 372, 86, 1, 45, "QED"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[11003, 368, 704, 17, 50, "Text"],
-Cell[11710, 387, 827, 25, 35, "EquationNumbered"],
-Cell[12540, 414, 897, 27, 53, "Text"],
-Cell[13440, 443, 303, 4, 28, "Text"]
+Cell[11470, 379, 704, 17, 50, "Text"],
+Cell[12177, 398, 827, 25, 43, "EquationNumbered"],
+Cell[13007, 425, 897, 27, 66, "Text"],
+Cell[13907, 454, 303, 4, 35, "Text"]
 }, Closed]]
 }, Closed]],
-Cell[13770, 451, 519, 12, 47, "Text"],
+Cell[14237, 462, 519, 12, 47, "Text"],
 Cell[CellGroupData[{
-Cell[14314, 467, 207, 6, 28, "Text"],
-Cell[14524, 475, 583, 20, 28, "Text"],
-Cell[15110, 497, 681, 22, 43, "EquationNumbered"],
-Cell[15794, 521, 268, 9, 28, "Text"],
-Cell[16065, 532, 754, 20, 43, "EquationNumbered"],
-Cell[16822, 554, 1300, 43, 60, "Text"],
-Cell[18125, 599, 907, 26, 43, "EquationNumbered"],
-Cell[19035, 627, 393, 13, 28, "Text"],
-Cell[19431, 642, 944, 32, 66, "EquationNumbered"],
-Cell[20378, 676, 670, 23, 31, "Text"]
+Cell[14781, 478, 207, 6, 28, "Text"],
+Cell[14991, 486, 583, 20, 28, "Text"],
+Cell[15577, 508, 681, 22, 43, "EquationNumbered"],
+Cell[16261, 532, 268, 9, 28, "Text"],
+Cell[16532, 543, 754, 20, 43, "EquationNumbered"],
+Cell[17289, 565, 1300, 43, 60, "Text"],
+Cell[18592, 610, 907, 26, 43, "EquationNumbered"],
+Cell[19502, 638, 393, 13, 28, "Text"],
+Cell[19898, 653, 944, 32, 66, "EquationNumbered"],
+Cell[20845, 687, 670, 23, 31, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[21085, 704, 350, 11, 25, "Text"],
+Cell[21552, 715, 350, 11, 25, "Text"],
 Cell[CellGroupData[{
-Cell[21460, 719, 160, 5, 28, "Text"],
-Cell[21623, 726, 150, 2, 28, "Text"],
-Cell[21776, 730, 930, 30, 59, "EquationNumbered"],
-Cell[22709, 762, 277, 4, 28, "Text"],
-Cell[22989, 768, 721, 22, 61, "EquationNumbered"],
-Cell[23713, 792, 288, 5, 28, "Text"],
-Cell[24004, 799, 1161, 36, 73, "EquationNumbered"],
-Cell[25168, 837, 226, 7, 28, "Text"],
-Cell[25397, 846, 192, 4, 28, "Text"],
-Cell[25592, 852, 1626, 49, 84, "EquationNumbered"],
-Cell[27221, 903, 102, 1, 28, "Text"]
+Cell[21927, 730, 160, 5, 35, "Text"],
+Cell[22090, 737, 150, 2, 35, "Text"],
+Cell[22243, 741, 930, 30, 73, "EquationNumbered"],
+Cell[23176, 773, 277, 4, 35, "Text"],
+Cell[23456, 779, 721, 22, 76, "EquationNumbered"],
+Cell[24180, 803, 288, 5, 35, "Text"],
+Cell[24471, 810, 1161, 36, 91, "EquationNumbered"],
+Cell[25635, 848, 226, 7, 35, "Text"],
+Cell[25864, 857, 192, 4, 35, "Text"],
+Cell[26059, 863, 1626, 49, 105, "EquationNumbered"],
+Cell[27688, 914, 102, 1, 35, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[27360, 909, 158, 5, 25, "Text"],
-Cell[27521, 916, 815, 25, 30, "Text"],
-Cell[28339, 943, 2585, 77, 113, "EquationNumbered"],
-Cell[30927, 1022, 398, 11, 36, "Text"],
-Cell[31328, 1035, 655, 18, 35, "EquationNumbered"],
-Cell[31986, 1055, 187, 4, 28, "Text"],
-Cell[32176, 1061, 810, 23, 35, "EquationNumbered"],
-Cell[32989, 1086, 184, 4, 28, "Text"],
-Cell[33176, 1092, 763, 23, 56, "EquationNumbered"],
-Cell[33942, 1117, 175, 4, 28, "Text"],
-Cell[34120, 1123, 366, 12, 56, "EquationNumbered"],
-Cell[34489, 1137, 344, 8, 50, "Text"]
+Cell[27827, 920, 158, 5, 31, "Text"],
+Cell[27988, 927, 815, 25, 37, "Text"],
+Cell[28806, 954, 2585, 77, 141, "EquationNumbered"],
+Cell[31394, 1033, 398, 11, 45, "Text"],
+Cell[31795, 1046, 655, 18, 43, "EquationNumbered"],
+Cell[32453, 1066, 187, 4, 35, "Text"],
+Cell[32643, 1072, 810, 23, 43, "EquationNumbered"],
+Cell[33456, 1097, 184, 4, 35, "Text"],
+Cell[33643, 1103, 763, 23, 70, "EquationNumbered"],
+Cell[34409, 1128, 175, 4, 35, "Text"],
+Cell[34587, 1134, 366, 12, 70, "EquationNumbered"],
+Cell[34956, 1148, 344, 8, 62, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[34870, 1150, 229, 6, 25, "Text"],
-Cell[35102, 1158, 844, 24, 76, "Text"],
-Cell[35949, 1184, 104, 1, 28, "Text"]
+Cell[35337, 1161, 229, 6, 31, "Text"],
+Cell[35569, 1169, 844, 24, 95, "Text"],
+Cell[36416, 1195, 104, 1, 35, "Text"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[36102, 1191, 154, 5, 25, "Text"],
-Cell[36259, 1198, 236, 7, 30, "Text"],
-Cell[36498, 1207, 433, 12, 31, "Text"],
-Cell[36934, 1221, 236, 5, 28, "Text"]
+Cell[36569, 1202, 154, 5, 25, "Text"],
+Cell[36726, 1209, 143, 2, 28, "Text"],
+Cell[36872, 1213, 433, 12, 31, "Text"],
+Cell[37308, 1227, 236, 5, 28, "Text"]
 }, Closed]]
 }
 ]
