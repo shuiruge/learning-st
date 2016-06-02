@@ -1,0 +1,308 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8685,        299]
+NotebookOptionsPosition[      7803,        272]
+NotebookOutlinePosition[      8311,        290]
+CellTagsIndexPosition[      8268,        287]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["1",
+  FontWeight->"Bold"],
+ " Remind we have changed the notation, from ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", ":=", 
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "1"], "+", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SuperscriptBox["\[Sigma]", "2"]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"w", ":=", 
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "1"], "+", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SuperscriptBox["\[Sigma]", "2"]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "=", 
+    RowBox[{"exp", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}], "}"}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Do those relations (especially those in section 2.1) holding under ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-coordinate still hold unde ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-coordinate?"
+}], "Text",
+ CellChangeTimes->{{3.673820227924705*^9, 3.673820230421238*^9}, {
+  3.673820315628527*^9, 3.67382038613058*^9}, {3.673820460923619*^9, 
+  3.673820571591616*^9}, {3.673820693760172*^9, 3.673820700230691*^9}}],
+
+Cell[TextData[{
+ "Since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "(", "w", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " does not change the form of action, anything derived from action without \
+emplyoying the relation between ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " holds also under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-coordinate. But, anything derived with employing the relation between ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " may not hold under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-coordinate."
+}], "Text",
+ CellChangeTimes->{{3.673820604126343*^9, 3.673820769218089*^9}}],
+
+Cell[TextData[{
+ StyleBox["1.1",
+  FontWeight->"Bold"],
+ " So, EOMs"
+}], "Text",
+ CellChangeTimes->{{3.673820810553482*^9, 3.673820824764753*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"PIE", ":", " ", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         OverscriptBox["z", "_"]], 
+        SuperscriptBox["X", "\[Mu]"]}]}], 
+      RowBox[{
+       SuperscriptBox["X", "\[Mu]"], "(", 
+       RowBox[{"z", ",", 
+        OverscriptBox["z", "_"]}], ")"}]}]}], "=", "0"}], " ", ";"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673820832788521*^9, 3.673820887450737*^9}, {
+  3.673821101381945*^9, 3.673821111793811*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"PIE", ":", " ", 
+    RowBox[{
+     RowBox[{"[", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         OverscriptBox["z", "_"]], 
+        RowBox[{
+         SuperscriptBox["X", "\[Mu]"], "(", 
+         RowBox[{"z", ",", 
+          OverscriptBox["z", "_"]}], ")"}]}]}], "]"}], " ", 
+     RowBox[{
+      SuperscriptBox["X", "\[Nu]"], "(", 
+      RowBox[{
+       SuperscriptBox["z", "\[Prime]"], ",", 
+       SuperscriptBox[
+        OverscriptBox["z", "_"], "\[Prime]"]}], ")"}]}]}], "=", 
+   RowBox[{
+    SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+    RowBox[{
+     SuperscriptBox["\[Delta]", "2"], "(", 
+     RowBox[{
+      RowBox[{"z", "-", 
+       SuperscriptBox["z", "\[Prime]"]}], ",", 
+      RowBox[{
+       OverscriptBox["z", "_"], "-", 
+       SuperscriptBox[
+        OverscriptBox["z", "_"], "\[Prime]"]}]}], ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673820861765954*^9, 3.673820936061237*^9}, {
+  3.67382111696982*^9, 3.673821211906624*^9}}],
+
+Cell[TextData[{
+ "holds also under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-coordiante."
+}], "Text",
+ CellChangeTimes->{{3.673821213500861*^9, 3.673821224751817*^9}}],
+
+Cell[TextData[{
+ StyleBox["1.2",
+  FontWeight->"Bold"],
+ " To re-derive normal-order under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-coordinate, we have to find a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", 
+    RowBox[{"z", ",", 
+     OverscriptBox["z", "_"]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", s.t."
+}], "Text",
+ CellChangeTimes->{{3.673821302212543*^9, 3.673821359688844*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[PartialD]", 
+    RowBox[{
+     OverscriptBox["\[PartialD]", "_"], 
+     RowBox[{"f", "(", 
+      RowBox[{"z", ",", 
+       OverscriptBox["z", "_"]}], ")"}]}]}], "=", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Delta]", "2"], "(", 
+     RowBox[{"z", ",", 
+      OverscriptBox["z", "_"]}], ")"}], " ", "."}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821360495666*^9, 3.673821387553776*^9}}],
+
+Cell[TextData[{
+ StyleBox["1.21",
+  FontWeight->"Bold"],
+ " First notice that"
+}], "Text",
+ CellChangeTimes->{{3.673821408077764*^9, 3.673821415893929*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       OverscriptBox["z", "_"]], " ", 
+      FractionBox["1", "z"]}], "=", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["z", "_"]}], 
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["w", "_"]}]], ")"}], 
+       RowBox[{"-", "1"}]], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        OverscriptBox["w", "_"]], 
+       FractionBox["1", 
+        RowBox[{"exp", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}], "}"}]}]]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "\[ImaginaryI]"}], " ", "z"}], ")"}], 
+       RowBox[{"-", "1"}]], " ", 
+      FractionBox["\[ImaginaryI]", "z"], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        OverscriptBox["w", "_"]], "w", " "}]}]},
+    {"\[Placeholder]", "=", "0"}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821418838309*^9, 3.673821651958408*^9}}],
+
+Cell["This is not the same form as", "Text",
+ CellChangeTimes->{{3.673821663093753*^9, 3.673821672987381*^9}, {
+  3.673821711912046*^9, 3.673821719606214*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[PartialD]", 
+     OverscriptBox["w", "_"]], 
+    FractionBox["1", "w"]}], "=", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Delta]", "2"], "(", 
+     RowBox[{"w", ",", 
+      OverscriptBox["w", "_"]}], ")"}], " ", "."}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821681932661*^9, 3.673821723207792*^9}}]
+},
+WindowSize->{1024, 549},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1332, 43, 53, "Text"],
+Cell[1892, 65, 1001, 33, 72, "Text"],
+Cell[2896, 100, 146, 5, 28, "Text"],
+Cell[3045, 107, 590, 18, 37, "EquationNumbered"],
+Cell[3638, 127, 1096, 34, 39, "EquationNumbered"],
+Cell[4737, 163, 214, 7, 28, "Text"],
+Cell[4954, 172, 472, 16, 30, "Text"],
+Cell[5429, 190, 470, 15, 39, "EquationNumbered"],
+Cell[5902, 207, 156, 5, 28, "Text"],
+Cell[6061, 214, 1172, 37, 104, "EquationNumbered"],
+Cell[7236, 253, 159, 2, 28, "Text"],
+Cell[7398, 257, 401, 13, 56, "EquationNumbered"]
+}
+]
+*)
+
+(* End of internal cache information *)
