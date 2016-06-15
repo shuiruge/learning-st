@@ -1,0 +1,1786 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     54592,       1777]
+NotebookOptionsPosition[     50496,       1658]
+NotebookOutlinePosition[     51005,       1676]
+CellTagsIndexPosition[     50962,       1673]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ StyleBox["1",
+  FontWeight->"Bold"],
+ " Remind we have changed the notation, from ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", ":=", 
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "1"], "+", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SuperscriptBox["\[Sigma]", "2"]}]}]}], TraditionalForm]]],
+ ", to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"w", ":=", 
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "1"], "+", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SuperscriptBox["\[Sigma]", "2"]}]}]}], TraditionalForm]]],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "=", 
+    RowBox[{"exp", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}], "}"}]}]}], 
+   TraditionalForm]]],
+ ". Do those relations (especially those in section 2.1) holding under ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]]],
+ "-coordinate still hold under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinate?"
+}], "Text",
+ CellChangeTimes->{{3.673820227924705*^9, 3.673820230421238*^9}, {
+   3.673820315628527*^9, 3.67382038613058*^9}, {3.673820460923619*^9, 
+   3.673820571591616*^9}, {3.673820693760172*^9, 3.673820700230691*^9}, 
+   3.674859714440119*^9}],
+
+Cell[TextData[{
+ "Since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "(", "w", ")"}], TraditionalForm]]],
+ " does not change the form of action, anything derived from action without \
+employing the relation between ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]]],
+ " and ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]]],
+ " holds also under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinate. But, anything derived with employing the relation between ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]]],
+ " and ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]]],
+ " may not hold under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinate."
+}], "Text",
+ CellChangeTimes->{{3.673820604126343*^9, 3.673820769218089*^9}, 
+   3.674859717829022*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.1",
+  FontWeight->"Bold"],
+ " So, EOMs"
+}], "Text",
+ CellChangeTimes->{{3.673820810553482*^9, 3.673820824764753*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"PIE", ":", " ", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         OverscriptBox["z", "_"]], 
+        SuperscriptBox["X", "\[Mu]"]}]}], 
+      RowBox[{
+       SuperscriptBox["X", "\[Mu]"], "(", 
+       RowBox[{"z", ",", 
+        OverscriptBox["z", "_"]}], ")"}]}]}], "=", "0"}], " ", ";"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673820832788521*^9, 3.673820887450737*^9}, {
+  3.673821101381945*^9, 3.673821111793811*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"PIE", ":", " ", 
+    RowBox[{
+     RowBox[{"[", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         OverscriptBox["z", "_"]], 
+        RowBox[{
+         SuperscriptBox["X", "\[Mu]"], "(", 
+         RowBox[{"z", ",", 
+          OverscriptBox["z", "_"]}], ")"}]}]}], "]"}], " ", 
+     RowBox[{
+      SuperscriptBox["X", "\[Nu]"], "(", 
+      RowBox[{
+       SuperscriptBox["z", "\[Prime]"], ",", 
+       SuperscriptBox[
+        OverscriptBox["z", "_"], "\[Prime]"]}], ")"}]}]}], "=", 
+   RowBox[{
+    SuperscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", 
+    RowBox[{
+     SuperscriptBox["\[Delta]", "2"], "(", 
+     RowBox[{
+      RowBox[{"z", "-", 
+       SuperscriptBox["z", "\[Prime]"]}], ",", 
+      RowBox[{
+       OverscriptBox["z", "_"], "-", 
+       SuperscriptBox[
+        OverscriptBox["z", "_"], "\[Prime]"]}]}], ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673820861765954*^9, 3.673820936061237*^9}, {
+  3.67382111696982*^9, 3.673821211906624*^9}}],
+
+Cell[TextData[{
+ "holds also under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinate."
+}], "Text",
+ CellChangeTimes->{{3.673821213500861*^9, 3.673821224751817*^9}, 
+   3.674859720081346*^9}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.2",
+  FontWeight->"Bold"],
+ " To define normal-order under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinate, we have to find a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", 
+    RowBox[{"z", ",", 
+     OverscriptBox["z", "_"]}], ")"}], TraditionalForm]]],
+ ", s.t."
+}], "Text",
+ CellChangeTimes->{{3.673821302212543*^9, 3.673821359688844*^9}, {
+  3.674852504434203*^9, 3.674852513888199*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[PartialD]", 
+    RowBox[{
+     OverscriptBox["\[PartialD]", "_"], 
+     RowBox[{"f", "(", 
+      RowBox[{"z", ",", 
+       OverscriptBox["z", "_"]}], ")"}]}]}], "=", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Delta]", "2"], "(", 
+     RowBox[{"z", ",", 
+      OverscriptBox["z", "_"]}], ")"}], " ", "."}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821360495666*^9, 3.673821387553776*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.21",
+  FontWeight->"Bold"],
+ " First notice that"
+}], "Text",
+ CellChangeTimes->{{3.673821408077764*^9, 3.673821415893929*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       OverscriptBox["z", "_"]], " ", 
+      FractionBox["1", "z"]}], "=", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["z", "_"]}], 
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["w", "_"]}]], ")"}], 
+       RowBox[{"-", "1"}]], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        OverscriptBox["w", "_"]], 
+       FractionBox["1", 
+        RowBox[{"exp", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}], "}"}]}]]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "\[ImaginaryI]"}], " ", "z"}], ")"}], 
+       RowBox[{"-", "1"}]], " ", 
+      FractionBox["\[ImaginaryI]", "z"], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        OverscriptBox["w", "_"]], "w", " "}]}]},
+    {"\[Placeholder]", "=", "0"}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821418838309*^9, 3.673821651958408*^9}}],
+
+Cell[TextData[{
+ "This states that, if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", ":=", 
+    RowBox[{
+     RowBox[{"exp", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}], "}"}]}], "=", 
+     RowBox[{"exp", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "\[ImaginaryI]"}], " ", 
+         SuperscriptBox["\[Sigma]", "1"]}], "+", 
+        SuperscriptBox["\[Sigma]", "2"]}], "}"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", then"
+}], "Text",
+ CellChangeTimes->{{3.673821663093753*^9, 3.673821672987381*^9}, {
+  3.673821711912046*^9, 3.673821719606214*^9}, {3.674852839743763*^9, 
+  3.674852907444354*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      OverscriptBox["z", "_"]], 
+     FractionBox["1", "z"]}], "=", 
+    RowBox[{"0", "\[NotEqual]", 
+     RowBox[{"2", " ", "\[DoubledPi]", " ", 
+      RowBox[{
+       SuperscriptBox["\[Delta]", "2"], "(", 
+       RowBox[{"z", ",", 
+        OverscriptBox["z", "_"]}], ")"}]}]}]}], " ", ","}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.67485291220199*^9, 3.674852931209863*^9}, {
+  3.674852966378499*^9, 3.674852987659167*^9}, {3.674853266677093*^9, 
+  3.67485326699815*^9}, {3.674853499376467*^9, 3.674853499651894*^9}}],
+
+Cell["which is not the same as", "Text",
+ CellChangeTimes->{{3.673821663093753*^9, 3.673821672987381*^9}, {
+   3.673821711912046*^9, 3.673821719606214*^9}, 3.674852839743763*^9, {
+   3.674853024273823*^9, 3.674853030566304*^9}, {3.674853503085876*^9, 
+   3.67485350382179*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[PartialD]", 
+     OverscriptBox["w", "_"]], 
+    FractionBox["1", "w"]}], "=", 
+   RowBox[{"2", " ", "\[DoubledPi]", " ", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Delta]", "2"], "(", 
+      RowBox[{"w", ",", 
+       OverscriptBox["w", "_"]}], ")"}], " ", "."}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821681932661*^9, 3.673821723207792*^9}, {
+  3.674852830058605*^9, 3.674852833587139*^9}, {3.674853035633899*^9, 
+  3.674853037045339*^9}}],
+
+Cell["Even,", "Text",
+ CellChangeTimes->{{3.674852993267401*^9, 3.674852993599488*^9}, {
+  3.674853271186741*^9, 3.674853272767961*^9}}],
+
+Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"\[PartialD]", "ln"}], "|", "z", 
+      SuperscriptBox["|", "2"]}], "=", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "z"}], 
+         RowBox[{"\[DifferentialD]", "w"}]], ")"}], 
+       RowBox[{"-", "1"}]], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "w"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"ln", 
+          RowBox[{"(", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}]], ")"}]}], "+", 
+         RowBox[{"ln", 
+          RowBox[{"(", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"\[ImaginaryI]", " ", "w"}]], ")"}]}]}], ")"}]}]}]},
+    {"\[Placeholder]", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SuperscriptBox["z", 
+         RowBox[{"-", "1"}]]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"\[ImaginaryI]", " ", "w"}]], " ", 
+         RowBox[{"(", 
+          RowBox[{"-", "\[ImaginaryI]"}], ")"}], " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}]]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}]], " ", "\[ImaginaryI]", 
+         " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"\[ImaginaryI]", " ", "w"}]]}]}], ")"}]}]},
+    {"\[Placeholder]", "\[Congruent]", 
+     RowBox[{"0", " ", ","}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674853301576772*^9, 3.674853475145805*^9}, {
+  3.674853519645878*^9, 3.674853529339211*^9}}],
+
+Cell["thus", "Text",
+ CellChangeTimes->{{3.674853530636366*^9, 3.674853530830978*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[PartialD]", "ln"}], "|", "z", 
+    SuperscriptBox["|", "2"]}], "=", 
+   RowBox[{"0", "\[NotEqual]", 
+    RowBox[{
+     FractionBox["1", 
+      OverscriptBox["z", "_"]], " ", "."}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674853533243768*^9, 3.674853555535653*^9}}],
+
+Cell["We conclude", "Text",
+ CellChangeTimes->{{3.674853566939528*^9, 3.67485357205687*^9}, 
+   3.674859732948898*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[PartialD]", 
+     RowBox[{
+      OverscriptBox["\[PartialD]", "_"], "ln"}]}], "|", "z", 
+    SuperscriptBox["|", "2"]}], "=", 
+   RowBox[{"0", "\[NotEqual]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Delta]", "2"], "(", 
+      RowBox[{"z", ",", 
+       OverscriptBox["z", "_"]}], ")"}], " ", "."}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673821360495666*^9, 3.673821387553776*^9}, {
+  3.67485300268679*^9, 3.674853014597042*^9}, {3.674853281084744*^9, 
+  3.674853287830936*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.211",
+  FontWeight->"Bold"],
+ " It can be directly checked that, denoting ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "=", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["\[Sigma]", "1"], "+", 
+         RowBox[{"\[ImaginaryI]", " ", 
+          SuperscriptBox["\[Sigma]", "2"]}]}], ")"}]}]], "=", 
+     RowBox[{
+      SuperscriptBox["\[Rho]", "1"], "+", 
+      RowBox[{"\[ImaginaryI]", " ", 
+       SuperscriptBox["\[Rho]", "2"]}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", if define ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[PartialD]", "z"], 
+    RowBox[{":=", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        SuperscriptBox["\[Rho]", "1"]], 
+       RowBox[{"-", "\[ImaginaryI]"}]}], " ", 
+      SubscriptBox["\[PartialD]", 
+       SuperscriptBox["\[Rho]", "2"]]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " instead of as induced from ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[PartialD]", "w"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "(", "w", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", then it does have"
+}], "Text",
+ CellChangeTimes->{{3.674854362640588*^9, 3.674854363965924*^9}, {
+  3.67485563852239*^9, 3.674855836787898*^9}, {3.674857848870451*^9, 
+  3.67485785099095*^9}, {3.674858039105329*^9, 3.674858077031249*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["\[PartialD]", "z"], 
+   RowBox[{":=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        SuperscriptBox["\[Rho]", "1"]], 
+       RowBox[{"-", "\[ImaginaryI]"}]}], " ", 
+      SubscriptBox["\[PartialD]", 
+       SuperscriptBox["\[Rho]", "2"]]}], "=", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "z"}], 
+         RowBox[{"\[DifferentialD]", "w"}]], ")"}], 
+       RowBox[{"-", "1"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          SuperscriptBox["\[Sigma]", "1"]], 
+         RowBox[{"-", "\[ImaginaryI]"}]}], " ", 
+        SubscriptBox["\[PartialD]", 
+         SuperscriptBox["\[Sigma]", "2"]]}], ")"}], "   ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"=", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox[
+             RowBox[{"\[DifferentialD]", "z"}], 
+             RowBox[{"\[DifferentialD]", "w"}]], ")"}], 
+           RowBox[{"-", "1"}]], " ", 
+          SubscriptBox["\[PartialD]", "w"]}]}], ")"}], " ", "."}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674855792099231*^9, 3.674855807714599*^9}, {
+   3.674855840218545*^9, 3.674855900083335*^9}, 3.674857971506549*^9, {
+   3.674858095390869*^9, 3.674858099227039*^9}}],
+
+Cell[TextData[{
+ "So, the derive in 1.21 is valid both when regarding ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[PartialD]", "z"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as induced and when as defined."
+}], "Text",
+ CellChangeTimes->{{3.674857972745744*^9, 3.674858018965903*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.22",
+  FontWeight->"Bold"],
+ " ",
+ StyleBox["But, deriving from divergence-theorem conflicts with 1.21.",
+  FontVariations->{"Underline"->True}]
+}], "Text",
+ CellChangeTimes->{{3.674853054790948*^9, 3.674853092466303*^9}, {
+  3.674853609082587*^9, 3.674853620234399*^9}, {3.674853809723*^9, 
+  3.674853815794588*^9}}],
+
+Cell["\<\
+By divergence-theorem, which is\
+\>", "Text",
+ CellChangeTimes->{{3.674853622255917*^9, 3.674853633135111*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[DifferentialD]", "2"], "z"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "z"], " ", 
+        SuperscriptBox["v", "z"]}], "+", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         OverscriptBox["z", "_"]], 
+        SuperscriptBox["v", 
+         OverscriptBox["z", "_"]]}]}], ")"}]}]}], "=", 
+   RowBox[{"\[ImaginaryI]", " ", 
+    RowBox[{"\[ContourIntegral]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["v", "z"], " ", 
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["z", "_"]}]}], "-", 
+        RowBox[{
+         SuperscriptBox["v", 
+          OverscriptBox["z", "_"]], " ", 
+         RowBox[{"\[DifferentialD]", "z"}]}]}], ")"}], " ", "."}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674853639696256*^9, 3.674853702565444*^9}}],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["v", "z"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["v", 
+     OverscriptBox["z", "_"]], "=", 
+    RowBox[{"1", "/", "z"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.674853704045879*^9, 3.674853729077457*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[DifferentialD]", "2"], "z"}], " ", 
+     RowBox[{
+      OverscriptBox["\[PartialD]", "_"], 
+      FractionBox["1", "z"]}]}]}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "\[ImaginaryI]"}], " ", 
+     RowBox[{"\[ContourIntegral]", 
+      RowBox[{
+       FractionBox["1", "z"], " ", 
+       RowBox[{"\[DifferentialD]", "z"}]}]}]}], "=", 
+    RowBox[{"2", " ", 
+     RowBox[{"\[DoubledPi]", " ", "."}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674853733690592*^9, 3.674853799062938*^9}}],
+
+Cell[TextData[{
+ "This conflicts with 1.21, since if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     OverscriptBox["\[PartialD]", "_"], 
+     RowBox[{"(", 
+      RowBox[{"1", "/", "z"}], ")"}]}], "=", "0"}], TraditionalForm]]],
+ ", then the lhs vanishes, conflicting with rhs."
+}], "Text",
+ CellChangeTimes->{{3.674853801530878*^9, 3.674853882682985*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["1.221",
+  FontWeight->"Bold"],
+ " It can be checked that divergence-theorem keeps its form under local \
+conformal transform. So, it keeps its form under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinates as under ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]]],
+ "-coordinates."
+}], "Text",
+ CellChangeTimes->{{3.674863806061592*^9, 3.674863812619507*^9}, {
+   3.67486386016387*^9, 3.674863920262723*^9}, {3.674867080865792*^9, 
+   3.674867108971182*^9}, 3.67493790558052*^9}],
+
+Cell[TextData[{
+ StyleBox["1.23",
+  FontWeight->"Bold"],
+ " By direct calculation, it can be found that"
+}], "Text",
+ CellChangeTimes->{{3.674950049697518*^9, 3.674950083697595*^9}, {
+  3.674950364106537*^9, 3.674950364975455*^9}, {3.674962265196811*^9, 
+  3.674962270449899*^9}, {3.674964148341634*^9, 3.674964170713614*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[PartialD]", 
+     OverscriptBox["z", "_"]], 
+    RowBox[{":=", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox[
+          RowBox[{"\[DifferentialD]", 
+           OverscriptBox["z", "_"]}], 
+          RowBox[{"\[DifferentialD]", 
+           OverscriptBox["w", "_"]}]], ")"}], 
+        RowBox[{"-", "1"}]], " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         OverscriptBox["w", "_"]], " ", 
+        RowBox[{"\[DoubleLongLeftRightArrow]", " ", 
+         SubscriptBox["\[PartialD]", 
+          OverscriptBox["z", "_"]]}]}]}], ":=", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "X"], 
+        RowBox[{"+", "\[ImaginaryI]"}]}], " ", 
+       SubscriptBox["\[PartialD]", "Y"]}]}]}]}], ",", " ", 
+   RowBox[{
+    RowBox[{"with", " ", "X"}], ":=", 
+    RowBox[{"Re", "(", "z", ")"}]}], ",", " ", 
+   RowBox[{"Y", ":=", 
+    RowBox[{
+     RowBox[{"Im", "(", "z", ")"}], "."}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674964177189129*^9, 3.674964271163026*^9}}],
+
+Cell["\<\
+So, what\[CloseCurlyQuote]s the confliction caused by?!?\
+\>", "Text",
+ CellChangeTimes->{{3.674964280422085*^9, 3.674964312971628*^9}}],
+
+Cell[TextData[{
+ StyleBox["1.24",
+  FontWeight->"Bold"],
+ " So, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[PartialD]", 
+      RowBox[{
+       OverscriptBox["\[PartialD]", "_"], "ln"}]}], "|", "z", 
+     SuperscriptBox["|", "2"]}], 
+    OverscriptBox["=", "?"], 
+    RowBox[{
+     SuperscriptBox["\[Delta]", "2"], "(", 
+     RowBox[{"z", ",", 
+      OverscriptBox["z", "_"]}], ")"}]}], TraditionalForm]], 
+  "EquationNumbered",
+  CellChangeTimes->{{3.673821360495666*^9, 3.673821387553776*^9}, {
+   3.67485300268679*^9, 3.674853014597042*^9}, {3.674853281084744*^9, 
+   3.674853287830936*^9}}],
+ " is a left problem. c.f. discussions in 1.21~1.23."
+}], "Text",
+ CellChangeTimes->{{3.674855904461295*^9, 3.674855908801204*^9}, {
+   3.674857870474748*^9, 3.674857954878936*^9}, 3.674858122381119*^9, 
+   3.674859738786145*^9, {3.674950019848468*^9, 3.674950044830836*^9}}]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["2",
+  FontWeight->"Bold"],
+ " On equ.(2.7.1):"
+}], "Text",
+ CellChangeTimes->{{3.674859222313064*^9, 3.674859229198623*^9}, {
+  3.674862555980248*^9, 3.674862578304968*^9}}],
+
+Cell[TextData[{
+ "In HST, this equation is derived not only from EOM, but also from boundary \
+condition; ",
+ StyleBox["and without bouddary condition as restriction, this equation \
+cannot be gained.",
+  FontVariations->{"Underline"->True}],
+ " c.f. section 3.3 in HST. So is equ.(2.7.1) in PST."
+}], "Text",
+ CellChangeTimes->{{3.674958877115945*^9, 3.674958895352688*^9}, {
+  3.674959661397089*^9, 3.674959695420122*^9}, {3.674959995079228*^9, 
+  3.674960056811326*^9}, {3.674960112980468*^9, 3.674960137709685*^9}, {
+  3.67496044048071*^9, 3.674960465693599*^9}, {3.674960583016238*^9, 
+  3.67496059369291*^9}}],
+
+Cell[TextData[{
+ "Next, we relate that in HST with this in PST. The relation between ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[Sigma]", "\[PlusMinus]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and then ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is in section 10 in HST:"
+}], "Text",
+ CellChangeTimes->{{3.674866187500049*^9, 3.674866202967132*^9}, {
+  3.674866255955669*^9, 3.67486627028564*^9}, {3.67493796430209*^9, 
+  3.674937966108068*^9}, {3.674938071572679*^9, 3.674938112873965*^9}, {
+  3.674938158834685*^9, 3.674938268138518*^9}, {3.674938323551058*^9, 
+  3.674938338623905*^9}, {3.674938551683217*^9, 3.67493861504397*^9}, {
+  3.674939590349487*^9, 3.674939671546962*^9}, {3.674939967265197*^9, 
+  3.674939974740732*^9}, {3.674958588496104*^9, 3.67495864065085*^9}, {
+  3.674958872438128*^9, 3.674958874912369*^9}, {3.674960157626612*^9, 
+  3.674960178454991*^9}, {3.674960242526662*^9, 3.674960319241697*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"z", "=", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", "w"}]], "=", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", 
+        SuperscriptBox["\[Sigma]", "1"]}], "+", 
+       SuperscriptBox["\[Sigma]", "2"]}]], "=", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "\[Sigma]"}], "+", 
+          SubscriptBox["\[Tau]", "wr"]}], ")"}]}]], "=", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", 
+        SuperscriptBox["\[Sigma]", "-"]}]]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674958642419814*^9, 3.674958665634271*^9}}],
+
+Cell[TextData[{
+ "and the same ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "=", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SuperscriptBox["\[Sigma]", "+"]}]]}], TraditionalForm]]],
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Tau]", "wr"], "\[Element]", 
+    RowBox[{"\[ImaginaryI]", " ", "\[DoubleStruckCapitalR]"}]}], 
+   TraditionalForm]]],
+ " is the Wick rotated. Then, we find"
+}], "Text",
+ CellChangeTimes->{{3.674866187500049*^9, 3.674866202967132*^9}, {
+  3.674866255955669*^9, 3.67486627028564*^9}, {3.67493796430209*^9, 
+  3.674937966108068*^9}, {3.674938071572679*^9, 3.674938112873965*^9}, {
+  3.674938158834685*^9, 3.674938268138518*^9}, {3.674938323551058*^9, 
+  3.674938338623905*^9}, {3.674938551683217*^9, 3.67493861504397*^9}, {
+  3.674939590349487*^9, 3.674939671546962*^9}, {3.674939967265197*^9, 
+  3.674939974740732*^9}, {3.674958588496104*^9, 3.67495863859315*^9}, {
+  3.674960326436306*^9, 3.674960331384245*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "z"], "=", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", 
+      SuperscriptBox["\[Sigma]", "-"]}]]}], " ", ";"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{3.67493946965248*^9, 3.674939677987849*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"ln", "|", "z", "|"}], "=", 
+   RowBox[{
+    RowBox[{"\[ImaginaryI]", " ", 
+     SubscriptBox["\[Tau]", "wr"]}], "\[Element]", 
+    RowBox[{"\[DoubleStruckCapitalR]", " ", "."}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674939679230704*^9, 3.674939694007872*^9}, {
+  3.674939983019293*^9, 3.674939983748028*^9}, {3.67495775863162*^9, 
+  3.674957780617449*^9}}],
+
+Cell["\<\
+Plugging this into equ.(2.7.3) in PST, get\
+\>", "Text",
+ CellChangeTimes->{{3.674939766676111*^9, 3.67493978769983*^9}, {
+  3.674960266240242*^9, 3.674960266742355*^9}, {3.674960338390766*^9, 
+  3.674960361450208*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["X", "\[Mu]"], "=", 
+    RowBox[{
+     SuperscriptBox["x", "\[Mu]"], "-", 
+     RowBox[{
+      SuperscriptBox["\[Alpha]", "\[Prime]"], " ", 
+      SuperscriptBox["p", "\[Mu]"], " ", 
+      SubscriptBox["\[Tau]", "wr"]}], "+", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         SuperscriptBox["\[Alpha]", "\[Prime]"], "2"], ")"}], 
+       RowBox[{"1", "/", "2"}]], " ", 
+      RowBox[{
+       UnderscriptBox["\[Sum]", 
+        RowBox[{"m", "\[Element]", 
+         RowBox[{"\[DoubleStruckCapitalZ]", "-", 
+          RowBox[{"{", "0", "}"}]}]}]], 
+       RowBox[{
+        FractionBox["1", "m"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SubsuperscriptBox["\[Alpha]", "m", "\[Mu]"], " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "\[ImaginaryI]"}], " ", "m", " ", 
+             SuperscriptBox["\[Sigma]", "-"]}]]}], "+", 
+          RowBox[{
+           SubsuperscriptBox[
+            OverscriptBox["\[Alpha]", "~"], "m", "\[Mu]"], " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "\[ImaginaryI]"}], " ", "m", " ", 
+             SuperscriptBox["\[Sigma]", "+"]}]]}]}], ")"}]}]}]}]}]}], " ", 
+   ","}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674939792894492*^9, 3.674939821266894*^9}, {
+   3.674939987727151*^9, 3.674940048035839*^9}, {3.67494009030131*^9, 
+   3.674940090420982*^9}, 3.674960231991724*^9}],
+
+Cell["which is consist with equ.(3.22) in HST.", "Text",
+ CellChangeTimes->{{3.674940091974718*^9, 3.674940108379785*^9}, {
+  3.674951810250012*^9, 3.67495181026008*^9}, {3.674960397783186*^9, 
+  3.674960398235777*^9}, {3.674961444621828*^9, 3.67496144463388*^9}}],
+
+Cell[TextData[{
+ StyleBox["Remark that, here we use, ",
+  FontVariations->{"Underline"->True}],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      OverscriptBox["z", "_"]], 
+     RowBox[{"f", "(", "z", ")"}]}], "=", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[DifferentialD]", 
+         OverscriptBox["z", "_"]}], "/", 
+        RowBox[{"\[DifferentialD]", 
+         OverscriptBox["w", "_"]}]}], ")"}], 
+      RowBox[{"-", "1"}]], " ", 
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       OverscriptBox["w", "_"]], 
+      RowBox[{"f", "(", 
+       RowBox[{"z", "(", "w", ")"}], ")"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontVariations->{"Underline"->True}],
+ StyleBox[", such as ",
+  FontVariations->{"Underline"->True}],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "z", ")"}], "=", 
+    RowBox[{"1", "/", "z"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontVariations->{"Underline"->True}],
+ StyleBox[", thus, ",
+  FontVariations->{"Underline"->True}],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      OverscriptBox["z", "_"]], 
+     RowBox[{"(", 
+      RowBox[{"1", "/", "z"}], ")"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontVariations->{"Underline"->True}],
+ StyleBox[" which is inconsist with Wirtinger\[CloseCurlyQuote]s derivative.",
+  
+  FontVariations->{"Underline"->True}]
+}], "Text",
+ CellChangeTimes->{{3.674961445013865*^9, 3.67496151007222*^9}, {
+  3.674962027392196*^9, 3.674962105124613*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["3",
+  FontWeight->"Bold"],
+ " Why ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     SubscriptBox["\[Alpha]", "0"], "\[Mu]"], "=", 
+    SuperscriptBox[
+     SubscriptBox[
+      OverscriptBox["\[Alpha]", "~"], "0"], "\[Mu]"]}], TraditionalForm]]],
+ "?:"
+}], "Text",
+ CellChangeTimes->{{3.674950233000173*^9, 3.674950240787811*^9}, 
+   3.674962505128553*^9}],
+
+Cell[TextData[{
+ "Pol says it\[CloseCurlyQuote]s caused by single-valuedness of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["X", "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". But in HST, it is ",
+ StyleBox["defined",
+  FontVariations->{"Underline"->True}],
+ " (in the contrary way as in PST, defined by ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["p", "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") to be equal, so as to re-write the classical solution of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["X", "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (corresponding to equ.(2.7.4) in PST) uniformly. This seems reasonable."
+}], "Text",
+ CellChangeTimes->{{3.674962348990307*^9, 3.674962555375286*^9}, {
+  3.674962591680795*^9, 3.674962681526038*^9}, {3.674962748455102*^9, 
+  3.674962754762993*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["4",
+  FontWeight->"Bold"],
+ " On equ.(2.7.3):"
+}], "Text",
+ CellChangeTimes->{{3.674859231549353*^9, 3.67485924275063*^9}, 
+   3.674862552957947*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["p", "\[Mu]"], "(", "C", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"2", " ", "\[DoubledPi]", " ", "\[ImaginaryI]"}]], " ", 
+     RowBox[{
+      SubscriptBox["\[ContourIntegral]", "C"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "z"}], " ", 
+         SuperscriptBox["j", "\[Mu]"]}], "-", 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["z", "_"]}], " ", 
+         SuperscriptBox[
+          OverscriptBox["j", "~"], "\[Mu]"]}]}], ")"}]}]}]}], " ", ","}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674859281174686*^9, 3.674859333447243*^9}, {
+  3.674859457116831*^9, 3.674859460512432*^9}, {3.674859959973426*^9, 
+  3.674859970662148*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["C", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a circle, on which time ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[Sigma]", "2"], "=", "Const"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". So, integral over ",
+ Cell[BoxData[
+  FormBox["C", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is an equal-time-integral."
+}], "Text",
+ CellChangeTimes->{{3.674859461620106*^9, 3.674859511299095*^9}, {
+  3.674860194839251*^9, 3.674860219694911*^9}}],
+
+Cell[TextData[{
+ "This is indeed a conserved as time flows, since consider two circles ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["C", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["C", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " representing two time epochs, then (reminding ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[PartialD]", "z"], 
+    RowBox[{"=", 
+     RowBox[{
+      RowBox[{"2", 
+       SubscriptBox["\[PartialD]", 
+        OverscriptBox["z", "_"]]}], "=", 
+      RowBox[{"2", " ", 
+       OverscriptBox["\[PartialD]", "_"]}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[PartialD]", 
+     OverscriptBox["z", "_"]], 
+    RowBox[{"=", 
+     RowBox[{
+      RowBox[{"2", 
+       SubscriptBox["\[PartialD]", "z"]}], "=", 
+      RowBox[{"2", "\[PartialD]"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["j", "\[Mu]"], ":=", 
+    SuperscriptBox[
+     SubscriptBox["j", "z"], "\[Mu]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     OverscriptBox["j", "~"], "\[Mu]"], ":=", 
+    SuperscriptBox[
+     SubscriptBox["j", 
+      OverscriptBox["z", "_"]], "\[Mu]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "),"
+}], "Text",
+ CellChangeTimes->{{3.674859336026705*^9, 3.674859440724199*^9}, {
+   3.674859524244007*^9, 3.674859586508373*^9}, 3.674859710842635*^9, {
+   3.674860058309254*^9, 3.674860165781257*^9}, {3.674860235498841*^9, 
+   3.674860246382298*^9}, {3.674860287706*^9, 3.674860301009674*^9}, 
+   3.674862673889848*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["p", "\[Mu]"], "(", 
+     SubscriptBox["C", "1"], ")"}], "-", 
+    RowBox[{
+     SuperscriptBox["p", "\[Mu]"], "(", 
+     SubscriptBox["C", "2"], ")"}]}], "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"2", " ", "\[DoubledPi]", " ", "\[ImaginaryI]"}]], " ", 
+     RowBox[{
+      SubscriptBox["\[ContourIntegral]", 
+       RowBox[{
+        SubscriptBox["C", "1"], "-", 
+        SubscriptBox["C", "2"]}]], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "z"}], " ", 
+         SuperscriptBox["j", "\[Mu]"]}], "-", 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", 
+          OverscriptBox["z", "_"]}], " ", 
+         SuperscriptBox[
+          OverscriptBox["j", "~"], "\[Mu]"]}]}], ")"}]}]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", "\[DoubledPi]"}]], " ", 
+      RowBox[{
+       SubscriptBox["\[Integral]", 
+        RowBox[{
+         RowBox[{"in", " ", 
+          SubscriptBox["C", "1"]}], "-", 
+         SubscriptBox["C", "2"]}]], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[DifferentialD]", "2"], "z"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[PartialD]", "z"], 
+           SuperscriptBox["j", "\[Mu]"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[PartialD]", 
+            OverscriptBox["z", "_"]], " ", 
+           SuperscriptBox[
+            OverscriptBox["j", "~"], "\[Mu]"]}]}], ")"}]}]}]}], 
+     "\[Congruent]", 
+     RowBox[{"0", " ", "."}]}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674859589497089*^9, 3.674859696585065*^9}, {
+  3.674860020015076*^9, 3.674860043063049*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["5",
+  FontWeight->"Bold"],
+ " Deriving equ.(2.7.5):"
+}], "Text",
+ CellChangeTimes->{{3.674866667430641*^9, 3.674866680979415*^9}, {
+  3.674866796481817*^9, 3.674866818528185*^9}, {3.674866857396735*^9, 
+  3.674866959823068*^9}, {3.674867003664858*^9, 3.674867017370717*^9}}],
+
+Cell[TextData[{
+ "Equ.(2.7.5) is directly gained by plugging equ.(2.7.2) into equ.(2.6.14), \
+",
+ StyleBox["if under ",
+  FontVariations->{"Underline"->True}],
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FontVariations->{"Underline"->True}],
+ StyleBox["-coordinate the normal-order is still ",
+  FontVariations->{"Underline"->True}],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{":", 
+     RowBox[{
+      RowBox[{"X", "(", 
+       RowBox[{
+        SubscriptBox["z", "1"], ",", 
+        SubscriptBox[
+         OverscriptBox["z", "_"], "1"]}], ")"}], " ", 
+      RowBox[{"X", "(", 
+       RowBox[{
+        SubscriptBox["z", "2"], ",", 
+        SubscriptBox[
+         OverscriptBox["z", "_"], "2"]}], ")"}]}]}], ":=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"X", "(", 
+        RowBox[{
+         SubscriptBox["z", "1"], ",", 
+         SubscriptBox[
+          OverscriptBox["z", "_"], "1"]}], ")"}], " ", 
+       RowBox[{"X", "(", 
+        RowBox[{
+         SubscriptBox["z", "2"], ",", 
+         SubscriptBox[
+          OverscriptBox["z", "_"], "2"]}], ")"}]}], "-", "ln"}], "|", 
+     RowBox[{
+      SubscriptBox["z", "1"], "-", 
+      SubscriptBox["z", "2"]}], 
+     SuperscriptBox["|", "2"]}]}], TraditionalForm]],
+  FontVariations->{"Underline"->True}],
+ StyleBox[".",
+  FontVariations->{"Underline"->True}]
+}], "Text",
+ CellChangeTimes->{{3.674866667430641*^9, 3.674866680979415*^9}, {
+  3.674866796481817*^9, 3.674866818528185*^9}, {3.674866857396735*^9, 
+  3.674866959823068*^9}, {3.674867003664858*^9, 3.674867013858878*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["6",
+  FontWeight->"Bold"],
+ " Relation between ",
+ StyleBox["creation-annihilation-normal-order",
+  FontSlant->"Italic"],
+ " and normal-order, i.e. deriving equ.(2.7.11):"
+}], "Text",
+ CellChangeTimes->{{3.674862680614764*^9, 3.674862685126347*^9}, {
+   3.67486640420539*^9, 3.674866453935698*^9}, 3.67486666565495*^9, {
+   3.674866825752768*^9, 3.674866826613687*^9}, 3.674941136672038*^9, {
+   3.67494727366538*^9, 3.674947296162324*^9}, 3.674948921705031*^9}],
+
+Cell[TextData[{
+ "Plug expansion ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     OverscriptBox["X", "^"], "~", 
+     SubscriptBox[
+      OverscriptBox["\[Alpha]", "^"], "m"]}], ",", 
+    SubscriptBox[
+     OverscriptBox[
+      OverscriptBox["\[Alpha]", "~"], "^"], "m"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", i.e. equ.(2.7.4) into ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      OverscriptBox["X", "^"], "\[Mu]"], "(", 
+     RowBox[{"z", ",", 
+      OverscriptBox["z", "_"]}], ")"}], " ", 
+    RowBox[{
+     SuperscriptBox[
+      OverscriptBox["X", "^"], "\[Nu]"], "(", 
+     RowBox[{
+      SuperscriptBox["z", "\[Prime]"], ",", 
+      SuperscriptBox[
+       OverscriptBox["z", "_"], "\[Prime]"]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "; and move all ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["\[Alpha]", "^"], 
+    RowBox[{"m", "<", "0"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    OverscriptBox["x", "^"], "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (creation-operators) to the right side of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["\[Alpha]", "^"], 
+    RowBox[{"m", ">", "0"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    OverscriptBox["p", "^"], "\[Mu]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (annihilation-operators) (c.f. equ.(2.7.3)) using commutation-relations \
+equ.(2.7.5). Then, direct calculation gives equ.(2.7.11). \
+It\[CloseCurlyQuote]s simple."
+}], "Text",
+ CellChangeTimes->{{3.674947312436477*^9, 3.674947708207168*^9}, {
+  3.674949486520389*^9, 3.674949495103941*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["6.1",
+  FontWeight->"Bold"],
+ " Remark that this is also an operator-PIE-correspondence:"
+}], "Text",
+ CellChangeTimes->{{3.674947797143292*^9, 3.67494786977595*^9}, {
+  3.674947900815569*^9, 3.674947921158212*^9}, {3.674948153891986*^9, 
+  3.674948200976814*^9}, {3.674948236816337*^9, 3.674948261303848*^9}, {
+  3.674948924665527*^9, 3.67494892585124*^9}}],
+
+Cell["\<\
+Equ.(2.7.12) shall be written as (\"::\" for \
+creation-annihilation-normal-order)\
+\>", "Text",
+ CellChangeTimes->{{3.674947797143292*^9, 3.67494786977595*^9}, {
+  3.674947900815569*^9, 3.674947921158212*^9}, {3.674948153891986*^9, 
+  3.674948200976814*^9}, {3.674948236816337*^9, 3.674948245837816*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"::", 
+     SuperscriptBox[
+      OverscriptBox["X", "^"], "\[Mu]"]}], 
+    RowBox[{"(", 
+     RowBox[{"z", ",", 
+      OverscriptBox["z", "_"]}], ")"}], " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        OverscriptBox["X", "^"], "\[Nu]"], "(", 
+       RowBox[{
+        SuperscriptBox["z", "\[Prime]"], ",", 
+        SuperscriptBox[
+         OverscriptBox["z", "_"], "\[Prime]"]}], ")"}], "::"}], " ", 
+     "\[LongLeftRightArrow]"}]}], " ", ":", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["X", "\[Mu]"], "(", 
+      RowBox[{"z", ",", 
+       OverscriptBox["z", "_"]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["X", "\[Nu]"], "(", 
+      RowBox[{
+       SuperscriptBox["z", "\[Prime]"], ",", 
+       SuperscriptBox[
+        OverscriptBox["z", "_"], "\[Prime]"]}], ")"}]}], ":", " ", 
+    RowBox[{"in", " ", "PIE"}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674947953291311*^9, 3.674947957524568*^9}, {
+  3.674948067863404*^9, 3.67494821473716*^9}}]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["7",
+  FontWeight->"Bold"],
+ " Deriving equ.(2.7.6), or say, equ.(2.7.10):"
+}], "Text",
+ CellChangeTimes->{{3.674941116628169*^9, 3.674941132420119*^9}, {
+   3.674947730636591*^9, 3.674947738209857*^9}, 3.6749489284163*^9}],
+
+Cell["Remind (equ.(2.6.6))", "Text",
+ CellChangeTimes->{{3.674948346054509*^9, 3.674948348269644*^9}, {
+  3.674949728105067*^9, 3.674949732486899*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    OverscriptBox["L", "^"], "m"], ":=", 
+   RowBox[{"\[ContourIntegral]", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[DifferentialD]", "z"}], 
+      RowBox[{"2", " ", "\[DoubledPi]", " ", "\[ImaginaryI]", " ", "z"}]], 
+     " ", 
+     SuperscriptBox["z", 
+      RowBox[{"m", "+", "2"}]], " ", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox[
+        OverscriptBox["T", "^"], "zz"], "(", "z", ")"}], " ", "."}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674948352096969*^9, 3.674948409589073*^9}, {
+  3.674949706864384*^9, 3.674949709313409*^9}}],
+
+Cell[TextData[{
+ "But, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "zz"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is defined from ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "ww"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", via equ.(2.6.9):"
+}], "Text",
+ CellChangeTimes->{{3.674948411601216*^9, 3.674948412421902*^9}, {
+  3.674948455030891*^9, 3.67494858286377*^9}, {3.67494868053781*^9, 
+  3.674948686718713*^9}, {3.674948760110825*^9, 3.674948769752403*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["T", "ww"], "=", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"\[DifferentialD]", "z"}], 
+        RowBox[{"\[DifferentialD]", "w"}]], ")"}], "2"], " ", 
+     SubscriptBox["T", "zz"]}], "+", 
+    FractionBox["c", "24"]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.67494878252486*^9, 3.674948793365098*^9}}],
+
+Cell[TextData[{
+ " (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"c", "=", "D"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in free CFT), or its operator form. Direct calculation shows"
+}], "Text",
+ CellChangeTimes->{{3.674948411601216*^9, 3.674948412421902*^9}, {
+  3.674948455030891*^9, 3.67494858286377*^9}, {3.67494868053781*^9, 
+  3.674948686718713*^9}, {3.674948760110825*^9, 3.67494877674704*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["T", "zz"], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"-", "1"}], 
+      SuperscriptBox["\[Alpha]", "\[Prime]"]], " ", ":", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       SuperscriptBox["X", "\[Mu]"]}], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       RowBox[{
+        SubscriptBox["X", "\[Mu]"], ":", " ", 
+        RowBox[{
+         RowBox[{"+", " ", 
+          FractionBox["c", "24"]}], " ", 
+         SuperscriptBox["z", 
+          RowBox[{"-", "2"}]]}]}]}]}]}]}], " ", ","}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674948699854254*^9, 3.674948750443315*^9}, {
+  3.674948808484854*^9, 3.674948830434774*^9}}],
+
+Cell["or its operator form", "Text",
+ CellChangeTimes->{{3.674948817058668*^9, 3.674948822462112*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["T", "^"], "zz"], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", "1"}], 
+       SuperscriptBox["\[Alpha]", "\[Prime]"]], " ", "::", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", "z"], 
+       SuperscriptBox[
+        OverscriptBox["X", "^"], "\[Mu]"]}]}], " ", 
+     RowBox[{
+      SubscriptBox["\[PartialD]", "z"], 
+      RowBox[{
+       SubscriptBox[
+        OverscriptBox["X", "^"], "\[Mu]"], "::", " ", 
+       RowBox[{"+", " ", 
+        FractionBox["c", "24"]}]}]}], " ", 
+     SuperscriptBox["z", 
+      RowBox[{"-", "2"}]]}]}], " ", ","}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674948699854254*^9, 3.674948750443315*^9}, {
+  3.674948808484854*^9, 3.674948863609208*^9}}],
+
+Cell[TextData[{
+ "where we have employed ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"::", 
+      OverscriptBox["A", "^"], "::"}], "\[LongLeftRightArrow]"}], ":", 
+    RowBox[{"A", ":", " ", 
+     RowBox[{"in", " ", "PIE"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", c.f. 6."
+}], "Text",
+ CellChangeTimes->{{3.674948864549403*^9, 3.674948934653261*^9}}],
+
+Cell[TextData[{
+ "Then, plugging equ.(2.7.4), or simply equ.(2.7.1) into ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["T", "^"], "zz"], TraditionalForm]],
+  CellChangeTimes->{{3.674948699854254*^9, 3.674948750443315*^9}, {
+   3.674948808484854*^9, 3.674948863609208*^9}}],
+ ", then into ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["L", "^"], "m"], TraditionalForm]],
+  CellChangeTimes->{{3.674948352096969*^9, 3.674948409589073*^9}}],
+ ", direct calculation gives"
+}], "Text",
+ CellChangeTimes->{{3.674949042078923*^9, 3.674949097456687*^9}, {
+  3.674949219783044*^9, 3.674949232617674*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    OverscriptBox["L", "^"], "m"], "=", 
+   RowBox[{
+    FractionBox["1", "2"], 
+    RowBox[{
+     UnderscriptBox["\[Sum]", 
+      RowBox[{"n", "\[Element]", "\[DoubleStruckCapitalZ]"}]], 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[Eta]", "\[Mu]\[Nu]"], " ", "::", " ", 
+       SubsuperscriptBox[
+        OverscriptBox["\[Alpha]", "^"], "n", "\[Mu]"]}], " ", 
+      RowBox[{
+       SubsuperscriptBox[
+        OverscriptBox["\[Alpha]", "^"], 
+        RowBox[{"m", "-", "n"}], "\[Nu]"], "::", " ", 
+       RowBox[{"+", " ", 
+        FractionBox["c", "24"]}]}], " ", 
+      RowBox[{
+       SubscriptBox["\[Delta]", 
+        RowBox[{"m", ",", "0"}]], " ", "."}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.674949248795053*^9, 3.674949409072962*^9}}],
+
+Cell[TextData[{
+ "This is different from equ.(2.7.10). But, the difference is only on ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["L", "^"], "0"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.674949822779217*^9, 3.674949889356076*^9}}],
+
+Cell["This is a left problem.", "Text",
+ CellChangeTimes->{{3.674949889640491*^9, 3.674949900646944*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["8",
+  FontWeight->"Bold"],
+ " Left problems:"
+}], "Text",
+ CellChangeTimes->{{3.674949912609059*^9, 3.674949922135639*^9}}],
+
+Cell[TextData[{
+ "1) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[PartialD]", 
+      RowBox[{
+       OverscriptBox["\[PartialD]", "_"], "ln"}]}], "|", "z", 
+     SuperscriptBox["|", "2"]}], "=", "?"}], TraditionalForm]],
+  CellChangeTimes->{{3.673821360495666*^9, 3.673821387553776*^9}, {
+   3.67485300268679*^9, 3.674853014597042*^9}, {3.674853281084744*^9, 
+   3.674853287830936*^9}}],
+ ", or simpler, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     OverscriptBox["\[PartialD]", "_"], 
+     RowBox[{"(", 
+      RowBox[{"1", "/", "z"}], ")"}]}], "=", "?"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " under ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]]],
+ "-coordinates (instead of ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]]],
+ "-coordiantes), c.f. 1.24."
+}], "Text",
+ CellChangeTimes->{{3.674949926727175*^9, 3.674949932607286*^9}, {
+  3.674950093914492*^9, 3.674950138607194*^9}, {3.674962997646436*^9, 
+  3.674963021523285*^9}}],
+
+Cell[TextData[{
+ "2) Thje extra term ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"c", "/", "24"}], TraditionalForm]]],
+ " in ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["L", "^"], "0"], TraditionalForm]]],
+ ", c.f. 7."
+}], "Text",
+ CellChangeTimes->{{3.674950297885696*^9, 3.674950327649021*^9}, 
+   3.674962332007816*^9, 3.674962768386864*^9}]
+}, Closed]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1196, 39, 53, "Text"],
+Cell[1778, 63, 795, 27, 72, "Text"],
+Cell[CellGroupData[{
+Cell[2598, 94, 146, 5, 28, "Text"],
+Cell[2747, 101, 590, 18, 57, "EquationNumbered"],
+Cell[3340, 121, 1096, 34, 60, "EquationNumbered"],
+Cell[4439, 157, 207, 7, 43, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[4683, 169, 452, 15, 27, "Text"],
+Cell[5138, 186, 470, 15, 39, "EquationNumbered"],
+Cell[CellGroupData[{
+Cell[5633, 205, 156, 5, 28, "Text"],
+Cell[5792, 212, 1172, 37, 104, "EquationNumbered"],
+Cell[6967, 251, 693, 22, 36, "Text"],
+Cell[7663, 275, 637, 17, 56, "EquationNumbered"],
+Cell[8303, 294, 277, 4, 28, "Text"],
+Cell[8583, 300, 549, 16, 56, "EquationNumbered"],
+Cell[9135, 318, 136, 2, 28, "Text"],
+Cell[9274, 322, 1847, 53, 95, "EquationNumbered"],
+Cell[11124, 377, 86, 1, 28, "Text"],
+Cell[11213, 380, 354, 11, 56, "EquationNumbered"],
+Cell[11570, 393, 118, 2, 28, "Text"],
+Cell[11691, 397, 579, 17, 40, "EquationNumbered"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12307, 419, 1561, 49, 72, "Text"],
+Cell[13871, 470, 1431, 42, 57, "EquationNumbered"],
+Cell[15305, 514, 302, 8, 31, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15644, 527, 346, 9, 28, "Text"],
+Cell[15993, 538, 121, 3, 28, "Text"],
+Cell[16117, 543, 992, 31, 55, "EquationNumbered"],
+Cell[17112, 576, 431, 17, 33, "Text"],
+Cell[17546, 595, 632, 20, 57, "EquationNumbered"],
+Cell[18181, 617, 366, 11, 28, "Text"]
+}, Open  ]],
+Cell[18562, 631, 525, 14, 50, "Text"],
+Cell[19090, 647, 326, 7, 28, "Text"],
+Cell[19419, 656, 1131, 35, 58, "EquationNumbered"],
+Cell[20553, 693, 146, 3, 28, "Text"],
+Cell[20702, 698, 896, 25, 37, "Text"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[21647, 729, 200, 6, 25, "Text"],
+Cell[21850, 737, 615, 12, 50, "Text"],
+Cell[22468, 751, 1084, 24, 28, "Text"],
+Cell[23555, 777, 915, 27, 42, "EquationNumbered"],
+Cell[24473, 806, 1003, 24, 36, "Text"],
+Cell[25479, 832, 337, 10, 56, "EquationNumbered"],
+Cell[25819, 844, 433, 11, 35, "EquationNumbered"],
+Cell[26255, 857, 229, 5, 28, "Text"],
+Cell[26487, 864, 1582, 42, 69, "EquationNumbered"],
+Cell[28072, 908, 264, 3, 28, "Text"],
+Cell[28339, 913, 1626, 52, 56, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[30002, 970, 398, 15, 27, "Text"],
+Cell[30403, 987, 869, 23, 74, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[31309, 1015, 176, 6, 25, "Text"],
+Cell[31488, 1023, 839, 24, 73, "EquationNumbered"],
+Cell[32330, 1049, 552, 18, 38, "Text"],
+Cell[32885, 1069, 1789, 60, 75, "Text"],
+Cell[34677, 1131, 1782, 55, 78, "EquationNumbered"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[36496, 1191, 301, 7, 25, "Text"],
+Cell[36800, 1200, 1559, 48, 70, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[38396, 1253, 489, 11, 25, "Text"],
+Cell[38888, 1266, 1811, 61, 103, "Text"],
+Cell[CellGroupData[{
+Cell[40724, 1331, 385, 8, 35, "Text"],
+Cell[41112, 1341, 315, 6, 35, "Text"],
+Cell[41430, 1349, 1084, 34, 48, "EquationNumbered"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[42563, 1389, 249, 6, 25, "Text"],
+Cell[42815, 1397, 151, 2, 35, "Text"],
+Cell[42969, 1401, 633, 19, 71, "EquationNumbered"],
+Cell[43605, 1422, 503, 15, 37, "Text"],
+Cell[44111, 1439, 435, 13, 70, "EquationNumbered"],
+Cell[44549, 1454, 413, 10, 35, "Text"],
+Cell[44965, 1466, 762, 24, 70, "EquationNumbered"],
+Cell[45730, 1492, 102, 1, 35, "Text"],
+Cell[45835, 1495, 816, 26, 70, "EquationNumbered"],
+Cell[46654, 1523, 395, 13, 41, "Text"],
+Cell[47052, 1538, 630, 17, 43, "Text"],
+Cell[47685, 1557, 835, 25, 81, "EquationNumbered"],
+Cell[48523, 1584, 302, 9, 43, "Text"],
+Cell[48828, 1595, 105, 1, 35, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[48970, 1601, 150, 5, 25, "Text"],
+Cell[49123, 1608, 994, 32, 34, "Text"],
+Cell[50120, 1642, 360, 13, 35, "Text"]
+}, Closed]]
+}
+]
+*)
+
+(* End of internal cache information *)
