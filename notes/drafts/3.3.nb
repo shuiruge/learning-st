@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     85174,       2751]
-NotebookOptionsPosition[     79326,       2583]
-NotebookOutlinePosition[     79834,       2601]
-CellTagsIndexPosition[     79791,       2598]
+NotebookDataLength[     89358,       2856]
+NotebookOptionsPosition[     83238,       2682]
+NotebookOutlinePosition[     83746,       2700]
+CellTagsIndexPosition[     83703,       2697]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -93,8 +93,7 @@ Cell[TextData[{
  "2) if with introduced world-sheet metric, then they are Lorentz symmetry in \
 ",
  Cell[BoxData[
-  FormBox["D", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["D", TraditionalForm]]],
  "-dimension space-time, symmetry of reparameterization of world-sheet \
 coordinates ",
  Cell[BoxData[
@@ -102,23 +101,21 @@ coordinates ",
    RowBox[{"(", 
     RowBox[{
      SuperscriptBox["\[Sigma]", "1"], ",", 
-     SuperscriptBox["\[Sigma]", "2"]}], ")"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     SuperscriptBox["\[Sigma]", "2"]}], ")"}], TraditionalForm]]],
  ", and Weyl symmetry by ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["h", "ab"], "\[Rule]", 
+    SubscriptBox["g", "ab"], "\[Rule]", 
     RowBox[{
      SuperscriptBox["\[ExponentialE]", "\[Phi]"], " ", 
-     SubscriptBox["h", "ab"]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     SubscriptBox["g", "ab"]}]}], TraditionalForm]]],
  "."
 }], "Text",
  CellChangeTimes->{{3.675324772107438*^9, 3.675324773197562*^9}, {
   3.675324820910776*^9, 3.675324896300629*^9}, {3.675325036656872*^9, 
-  3.675325036657419*^9}}]
-}, Closed]],
+  3.675325036657419*^9}, {3.67693211300249*^9, 3.676932114777225*^9}}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -184,7 +181,7 @@ Cell[BoxData[
      SubscriptBox["S", "p"], "[", 
      RowBox[{
       SuperscriptBox["X", "\[Mu]"], ",", 
-      SubscriptBox["h", "ab"]}], "]"}], "=", 
+      SubscriptBox["g", "ab"]}], "]"}], "=", 
     RowBox[{
      RowBox[{"c", " ", 
       RowBox[{"\[Integral]", 
@@ -193,37 +190,36 @@ Cell[BoxData[
          SuperscriptBox["\[DifferentialD]", "2"], "\[Sigma]"}], " ", 
         SqrtBox[
          RowBox[{"-", "h"}]], " ", 
-        SuperscriptBox["h", "ab"], " ", 
+        SuperscriptBox["g", "ab"], " ", 
         RowBox[{
          SubscriptBox["\[PartialD]", "a"], 
          SuperscriptBox["X", "\[Mu]"]}], " ", 
         RowBox[{
          SubscriptBox["\[PartialD]", "b"], 
          SubscriptBox["X", "\[Mu]"]}]}]}]}], "+", 
-     RowBox[{"b", ".", "t", "."}]}]}], " ", ","}], 
+     RowBox[{"boundary", "."}]}]}], " ", ","}], 
   TraditionalForm]], "EquationNumbered",
  CellChangeTimes->{{3.67532513993512*^9, 3.675325177254819*^9}, {
   3.675325207544381*^9, 3.675325264116393*^9}, {3.675325510235876*^9, 
-  3.675325517037831*^9}}],
+  3.675325517037831*^9}, {3.676931464400903*^9, 3.67693146662599*^9}, {
+  3.67693215654573*^9, 3.676932158204029*^9}}],
 
 Cell[TextData[{
  "with a free constant ",
  Cell[BoxData[
-  FormBox["c", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["c", TraditionalForm]]],
  " (\[OpenCurlyDoubleQuote]P\[CloseCurlyDoubleQuote] for \
 \[OpenCurlyDoubleQuote]Polyakov\[CloseCurlyDoubleQuote]); \
-\[OpenCurlyDoubleQuote]b.t.\[CloseCurlyDoubleQuote] is for \
-\[OpenCurlyDoubleQuote]boundary terms\[CloseCurlyDoubleQuote] which is \
-contructed only by world-sheet metric ",
+\[OpenCurlyDoubleQuote]boundary\[CloseCurlyDoubleQuote] term is contructed \
+only by world-sheet metric ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["h", "ab"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["g", "ab"], TraditionalForm]]],
  "."
 }], "Text",
  CellChangeTimes->{{3.675325265176987*^9, 3.675325328460949*^9}, {
-  3.675325526682684*^9, 3.675325579939873*^9}}],
+  3.675325526682684*^9, 3.675325579939873*^9}, {3.676931470378154*^9, 
+  3.676931470378512*^9}, {3.676932147586732*^9, 3.676932154254969*^9}}],
 
 Cell[CellGroupData[{
 
@@ -244,12 +240,12 @@ Cell[BoxData[
      RowBox[{
       SuperscriptBox["\[DifferentialD]", "2"], "\[Sigma]"}], " ", 
      SqrtBox[
-      RowBox[{"-", "h"}]], " ", 
+      RowBox[{"-", "g"}]], " ", 
      RowBox[{
       SuperscriptBox[
        RowBox[{"(", 
         RowBox[{
-         SuperscriptBox["h", "ab"], " ", 
+         SuperscriptBox["g", "ab"], " ", 
          RowBox[{
           SubscriptBox["\[PartialD]", "a"], 
           SuperscriptBox["X", "\[Mu]"]}], " ", 
@@ -257,8 +253,9 @@ Cell[BoxData[
           SubscriptBox["\[PartialD]", "b"], 
           SubscriptBox["X", "\[Mu]"]}]}], ")"}], "2"], " ", "."}]}]}]}], 
   TraditionalForm]], "EquationNumbered",
- CellChangeTimes->{{3.67532563811997*^9, 3.675325696659538*^9}}]
-}, Closed]],
+ CellChangeTimes->{{3.67532563811997*^9, 3.675325696659538*^9}, {
+  3.676931474561747*^9, 3.67693147594105*^9}}]
+}, Open  ]],
 
 Cell[TextData[{
  StyleBox["1.32",
@@ -271,26 +268,23 @@ Cell[TextData[{
      RowBox[{"(", 
       RowBox[{
        SubscriptBox["\[Delta]S", "P"], "/", 
-       SubscriptBox["\[Delta]h", "ab"]}], ")"}], "[", 
+       SubscriptBox["\[Delta]g", "ab"]}], ")"}], "[", 
      SubscriptBox[
-      OverscriptBox["h", "^"], "ab"], "]"}], "=", "0"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      OverscriptBox["g", "^"], "ab"], "]"}], "=", "0"}], TraditionalForm]]],
  " and plugging ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
-    OverscriptBox["h", "^"], "ab"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    OverscriptBox["g", "^"], "ab"], TraditionalForm]]],
  " back to ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["S", "p"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["S", "p"], TraditionalForm]]],
  "."
 }], "Text",
  CellChangeTimes->{{3.67532533490572*^9, 3.675325497413779*^9}, {
   3.675325590756441*^9, 3.67532559078026*^9}, {3.675325703592615*^9, 
-  3.675325703668921*^9}}],
+  3.675325703668921*^9}, {3.676931479054595*^9, 3.676931489266968*^9}}],
 
 Cell[CellGroupData[{
 
@@ -309,20 +303,19 @@ Cell[TextData[{
   FormBox[
    RowBox[{
     RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}], " ", 
-    RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}], " ", "exp", 
+    RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}], " ", "exp", 
     RowBox[{"{", 
      RowBox[{"\[ImaginaryI]", " ", 
       RowBox[{
        SubscriptBox["S", "p"], "[", 
-       RowBox[{"X", ",", "h"}], "]"}]}], "}"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+       RowBox[{"X", ",", "g"}], "]"}]}], "}"}]}], TraditionalForm]]],
  " is invariant under (Weyl+diff)-transform, then we have"
 }], "Theorem",
  CellChangeTimes->{{3.675325782089629*^9, 3.675325969673081*^9}, {
   3.675326001430827*^9, 3.675326036745151*^9}, {3.675326274243821*^9, 
   3.675326379484327*^9}, {3.675326686256649*^9, 3.675326735970506*^9}, {
   3.675328030295665*^9, 3.675328047529728*^9}, {3.675328129740368*^9, 
-  3.675328150735611*^9}}],
+  3.675328150735611*^9}, {3.676931492640393*^9, 3.676931494498194*^9}}],
 
 Cell[BoxData[
  FormBox[
@@ -330,12 +323,12 @@ Cell[BoxData[
    RowBox[{"\[Integral]", 
     RowBox[{
      RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}], " ", 
-     RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}], " ", "exp", 
+     RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}], " ", "exp", 
      RowBox[{"{", 
       RowBox[{"\[ImaginaryI]", " ", 
        RowBox[{
         SubscriptBox["S", "P"], "[", 
-        RowBox[{"X", ",", "h"}], "]"}]}], "}"}]}]}], " ", "=", " ", 
+        RowBox[{"X", ",", "g"}], "]"}]}], "}"}]}]}], " ", "=", " ", 
    RowBox[{"Const", "\[Times]", 
     RowBox[{"\[Integral]", 
      RowBox[{
@@ -348,40 +341,43 @@ Cell[BoxData[
        "."}]}]}]}]}], TraditionalForm]], "EquationNumbered",
  CellChangeTimes->{{3.675325971970307*^9, 3.675325999097157*^9}, {
    3.675326041524843*^9, 3.675326104370218*^9}, 3.675326797377164*^9, {
-   3.675328095026797*^9, 3.675328106276263*^9}}]
-}, Closed]],
+   3.675328095026797*^9, 3.675328106276263*^9}, {3.676931506532989*^9, 
+   3.676931507966557*^9}}]
+}, Open  ]],
 
 Cell[TextData[{
  "We have omitted the indices of ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["X", "\[Mu]"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SuperscriptBox["X", "\[Mu]"], TraditionalForm]]],
  " and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["h", "ab"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["g", "ab"], TraditionalForm]]],
  " in ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[ScriptCapitalD]", "[", ".", "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"\[ScriptCapitalD]", "[", ".", "]"}], TraditionalForm]]],
  " and ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"S", "[", ".", "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"S", "[", ".", "]"}], TraditionalForm]]],
  ", also in the followings."
 }], "Text",
  CellChangeTimes->{{3.675326105365652*^9, 3.675326136095564*^9}, {
   3.675326235084208*^9, 3.675326235898638*^9}, {3.675326382024553*^9, 
-  3.675326394182373*^9}, {3.675326743161933*^9, 3.675326763930943*^9}}],
+  3.675326394182373*^9}, {3.675326743161933*^9, 3.675326763930943*^9}, {
+  3.676931512197196*^9, 3.676931512197555*^9}}],
 
 Cell[CellGroupData[{
 
+Cell["\[LeftAngleBracket]Proof\[RightAngleBracket]:", "Text",
+ CellChangeTimes->{{3.675326236981312*^9, 3.675326242046783*^9}, {
+  3.675326820478331*^9, 3.675327087135813*^9}, {3.675328116812301*^9, 
+  3.675328117359303*^9}, {3.676931392336607*^9, 3.676931392819411*^9}}],
+
 Cell[TextData[{
- "\[LeftAngleBracket]Proof\[RightAngleBracket]: Remind that ",
+ "Remind that ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -391,15 +387,12 @@ Cell[TextData[{
      SubscriptBox["S", "p"], "[", 
      RowBox[{"X", ",", 
       RowBox[{
-       OverscriptBox["h", "^"], "(", "X", ")"}]}], "]"}]}], TraditionalForm]],
-  
-  FormatType->"TraditionalForm"],
+       OverscriptBox["g", "^"], "(", "X", ")"}]}], "]"}]}], TraditionalForm]]],
  " where ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    OverscriptBox["h", "^"], "(", "X", ")"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    OverscriptBox["g", "^"], "(", "X", ")"}], TraditionalForm]]],
  " is on-shell: ",
  Cell[BoxData[
   FormBox[
@@ -408,24 +401,20 @@ Cell[TextData[{
      RowBox[{"(", 
       RowBox[{
        SubscriptBox["\[Delta]S", "P"], "/", 
-       SubscriptBox["\[Delta]h", "ab"]}], ")"}], "[", 
+       SubscriptBox["\[Delta]g", "ab"]}], ")"}], "[", 
      RowBox[{
       SubscriptBox[
-       OverscriptBox["h", "^"], "ab"], "(", 
+       OverscriptBox["g", "^"], "ab"], "(", 
       SuperscriptBox["X", "\[Mu]"], ")"}], "]"}], "=", "0"}], 
-   TraditionalForm]],
-  FormatType->"TraditionalForm"],
- ". Let\[CloseCurlyQuote]s denote, following PST, \
-(Weyl+diff)-(gauge)-transform by ",
+   TraditionalForm]]],
+ ". Let's denote, following PST, (Weyl+diff)-(gauge)-transform by ",
  Cell[BoxData[
   FormBox[
    RowBox[{"A", "\[Rule]", 
-    SuperscriptBox["A", "\[Zeta]"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["A", "\[Zeta]"]}], TraditionalForm]]],
  ", where ",
  Cell[BoxData[
-  FormBox["\[Zeta]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Zeta]", TraditionalForm]]],
  " parameterize the transform. Thus, condition says, ",
  Cell[BoxData[
   FormBox[
@@ -435,14 +424,14 @@ Cell[TextData[{
       SuperscriptBox["X", "\[Mu]"], "(", "\[Sigma]", ")"}]}], ",", 
     RowBox[{"\[ForAll]", 
      RowBox[{
-      SubscriptBox["h", "ab"], "(", "\[Sigma]", ")"}]}], ",", 
-    RowBox[{"\[ForAll]", "\[Zeta]"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      SubscriptBox["g", "ab"], "(", "\[Sigma]", ")"}]}], ",", 
+    RowBox[{"\[ForAll]", "\[Zeta]"}]}], TraditionalForm]]],
  ","
 }], "Text",
  CellChangeTimes->{{3.675326236981312*^9, 3.675326242046783*^9}, {
   3.675326820478331*^9, 3.675327087135813*^9}, {3.675328116812301*^9, 
-  3.675328117359303*^9}}],
+  3.675328117359303*^9}, {3.676931392336607*^9, 3.676931392553061*^9}, {
+  3.676931526709102*^9, 3.676931545200245*^9}}],
 
 Cell[BoxData[
  FormBox[
@@ -453,11 +442,12 @@ Cell[BoxData[
     RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}]}], " ", ";", " ", 
    RowBox[{
     RowBox[{"\[ScriptCapitalD]", "[", 
-     SuperscriptBox["h", "\[Zeta]"], "]"}], "=", 
+     SuperscriptBox["g", "\[Zeta]"], "]"}], "=", 
     RowBox[{
-     RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}], " ", "."}]}]}], 
+     RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}], " ", "."}]}]}], 
   TraditionalForm]], "EquationNumbered",
- CellChangeTimes->{{3.675327091620864*^9, 3.675327131197994*^9}}],
+ CellChangeTimes->{{3.675327091620864*^9, 3.675327131197994*^9}, {
+  3.676931549833282*^9, 3.676931551508137*^9}}],
 
 Cell[TextData[{
  "Now, ",
@@ -469,13 +459,12 @@ Cell[TextData[{
       SuperscriptBox["X", "\[Mu]"], "(", "\[Sigma]", ")"}]}], ",", 
     RowBox[{"\[ForAll]", 
      RowBox[{
-      SubscriptBox["h", "ab"], "(", "\[Sigma]", ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      SubscriptBox["g", "ab"], "(", "\[Sigma]", ")"}]}]}], 
+   TraditionalForm]]],
  " given, ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[Exists]", "\[Zeta]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"\[Exists]", "\[Zeta]"}], TraditionalForm]]],
  ", s.t. ",
  Cell[BoxData[
   FormBox[
@@ -484,22 +473,23 @@ Cell[TextData[{
      RowBox[{"(", 
       RowBox[{
        SubscriptBox["\[Delta]S", "P"], "/", 
-       SubscriptBox["\[Delta]h", "ab"]}], ")"}], "[", 
+       SubscriptBox["\[Delta]g", "ab"]}], ")"}], "[", 
      RowBox[{
-      SubsuperscriptBox["h", "ab", "\[Zeta]"], "(", 
+      SubsuperscriptBox["g", "ab", "\[Zeta]"], "(", 
       SuperscriptBox[
        SuperscriptBox["X", "\[Mu]"], "\[Zeta]"], ")"}], "]"}], "=", "0"}], 
    TraditionalForm]]],
  ", or say,"
 }], "Text",
  CellChangeTimes->{{3.675327132875686*^9, 3.675327196840425*^9}, {
-  3.675328319040673*^9, 3.675328347880322*^9}}],
+  3.675328319040673*^9, 3.675328347880322*^9}, {3.676931560418938*^9, 
+  3.676931566472674*^9}}],
 
 Cell[BoxData[
  FormBox[
   RowBox[{
    RowBox[{
-    SubsuperscriptBox["h", "ab", "\[Zeta]"], "=", 
+    SubsuperscriptBox["g", "ab", "\[Zeta]"], "=", 
     RowBox[{
      RowBox[{
       SubscriptBox["\[PartialD]", "a"], 
@@ -512,7 +502,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.675327205973314*^9, 3.675327286282172*^9}, 
    3.675327489889462*^9, {3.675328297740854*^9, 3.675328298121593*^9}, {
    3.675382091492211*^9, 3.675382096084807*^9}, {3.675382331911139*^9, 
-   3.675382334154043*^9}}],
+   3.675382334154043*^9}, 3.67693157313361*^9}],
 
 Cell[TextData[{
  "Indeed, transforming from this, by choosing ",
@@ -536,7 +526,7 @@ Cell[BoxData[
  FormBox[
   RowBox[{
    RowBox[{
-    SubscriptBox["h", "\[Mu]\[Nu]"], "(", "\[Sigma]", ")"}], "=", 
+    SubscriptBox["g", "\[Mu]\[Nu]"], "(", "\[Sigma]", ")"}], "=", 
    RowBox[{
     SuperscriptBox["\[ExponentialE]", 
      RowBox[{"-", "\[Phi]"}]], " ", 
@@ -558,11 +548,17 @@ Cell[BoxData[
     RowBox[{
      RowBox[{
       SubscriptBox["\[PartialD]", "b"], 
-      SubscriptBox["X", "\[Mu]"]}], " ", ".", " ", "asdf"}]}]}], 
+      SubscriptBox["X", "\[Mu]"]}], " ", ".", " ", 
+     StyleBox[
+      RowBox[{"(", 
+       RowBox[{"Problem", " ", "exists", " ", 
+        RowBox[{"herein", "!"}]}], ")"}],
+      Background->RGBColor[1, 0.85, 0.85]]}]}]}], 
   TraditionalForm]], "EquationNumbered",
  CellChangeTimes->{{3.6753273821717*^9, 3.675327398106566*^9}, {
-  3.675327495625537*^9, 3.675327647487985*^9}, {3.6753821056469*^9, 
-  3.675382124923895*^9}, {3.675382345425707*^9, 3.675382346131019*^9}}],
+   3.675327495625537*^9, 3.675327647487985*^9}, {3.6753821056469*^9, 
+   3.675382124923895*^9}, {3.675382345425707*^9, 3.675382346131019*^9}, 
+   3.676931587475711*^9, {3.676935808642319*^9, 3.676935815773041*^9}}],
 
 Cell[TextData[{
  "Then, as ",
@@ -576,7 +572,7 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["h", "\[Mu]\[Nu]"], "(", "\[Sigma]", ")"}], 
+    SubscriptBox["g", "\[Mu]\[Nu]"], "(", "\[Sigma]", ")"}], 
    TraditionalForm]]],
  " which also have 3 dofs. So, ",
  Cell[BoxData[
@@ -587,7 +583,7 @@ Cell[TextData[{
       SuperscriptBox["X", "\[Mu]"], "(", "\[Sigma]", ")"}]}], ",", 
     RowBox[{"\[ForAll]", 
      RowBox[{
-      SubscriptBox["h", "ab"], "(", "\[Sigma]", ")"}]}]}], 
+      SubscriptBox["g", "ab"], "(", "\[Sigma]", ")"}]}]}], 
    TraditionalForm]]],
  " given, ",
  Cell[BoxData[
@@ -608,7 +604,7 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubsuperscriptBox["h", "ab", "\[Zeta]"], "=", 
+    SubsuperscriptBox["g", "ab", "\[Zeta]"], "=", 
     RowBox[{
      RowBox[{
       SubsuperscriptBox["\[PartialD]", "a", "\[Zeta]"], 
@@ -622,7 +618,8 @@ Cell[TextData[{
  "."
 }], "Text",
  CellChangeTimes->{{3.675327651936416*^9, 3.675327907415612*^9}, {
-  3.67538225173465*^9, 3.675382255233906*^9}}],
+  3.67538225173465*^9, 3.675382255233906*^9}, {3.676931667167279*^9, 
+  3.676931692227072*^9}}],
 
 Cell[TextData[{
  "By this, then, as ",
@@ -634,13 +631,14 @@ Cell[TextData[{
       SuperscriptBox["X", "\[Mu]"], "(", "\[Sigma]", ")"}]}], ",", 
     RowBox[{"\[ForAll]", 
      RowBox[{
-      SubscriptBox["h", "ab"], "(", "\[Sigma]", ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      SubscriptBox["g", "ab"], "(", "\[Sigma]", ")"}]}]}], 
+   TraditionalForm]]],
  " given, ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[Exists]", "\[Zeta]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"\[Exists]", 
+    RowBox[{"\[Zeta]", "(", 
+     RowBox[{"X", ",", "g"}], ")"}]}], TraditionalForm]]],
  " s.t. ",
  Cell[BoxData[
   FormBox[
@@ -649,9 +647,9 @@ Cell[TextData[{
      RowBox[{"(", 
       RowBox[{
        SubscriptBox["\[Delta]S", "P"], "/", 
-       SubscriptBox["\[Delta]h", "ab"]}], ")"}], "[", 
+       SubscriptBox["\[Delta]g", "ab"]}], ")"}], "[", 
      RowBox[{
-      SubsuperscriptBox["h", "ab", "\[Zeta]"], "(", 
+      SubsuperscriptBox["g", "ab", "\[Zeta]"], "(", 
       SuperscriptBox[
        SuperscriptBox["X", "\[Mu]"], "\[Zeta]"], ")"}], "]"}], "=", "0"}], 
    TraditionalForm]]],
@@ -663,46 +661,47 @@ Cell[TextData[{
      SubscriptBox["S", "p"], "[", 
      RowBox[{
       SuperscriptBox["X", "\[Zeta]"], ",", 
-      SuperscriptBox["h", "\[Zeta]"]}], "]"}], "=", 
+      SuperscriptBox["g", "\[Zeta]"]}], "]"}], "=", 
     RowBox[{
      SubscriptBox["S", "NG"], "[", 
-     SuperscriptBox["X", "\[Zeta]"], "]"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
- ","
+     SuperscriptBox["X", "\[Zeta]"], "]"}]}], TraditionalForm]]],
+ ", then"
 }], "Text",
  CellChangeTimes->{{3.675327942149597*^9, 3.675327965461567*^9}, {
   3.675328369227312*^9, 3.675328407573658*^9}, {3.675328676662908*^9, 
-  3.675328752035331*^9}}],
+  3.675328752035331*^9}, {3.676931695468115*^9, 3.676931708469336*^9}, {
+  3.676931754069617*^9, 3.676931755275342*^9}, {3.676932185161649*^9, 
+  3.676932187033299*^9}}],
 
 Cell[BoxData[
  FormBox[GridBox[{
     {
      RowBox[{
       RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}], " ", 
-      RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}], " ", "exp", 
+      RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}], " ", "exp", 
       RowBox[{"{", 
        RowBox[{"\[ImaginaryI]", " ", 
         RowBox[{
          SubscriptBox["S", "p"], "[", 
-         RowBox[{"X", ",", "h"}], "]"}]}], "}"}]}], "=", 
+         RowBox[{"X", ",", "g"}], "]"}]}], "}"}]}], "=", 
      RowBox[{
       RowBox[{"\[ScriptCapitalD]", "[", 
        SuperscriptBox["X", "\[Zeta]"], "]"}], " ", 
       RowBox[{"\[ScriptCapitalD]", "[", 
-       SuperscriptBox["h", "\[Zeta]"], "]"}], " ", "exp", 
+       SuperscriptBox["g", "\[Zeta]"], "]"}], " ", "exp", 
       RowBox[{"{", 
        RowBox[{"\[ImaginaryI]", " ", 
         RowBox[{
          SubscriptBox["S", "p"], "[", 
          RowBox[{
           SuperscriptBox["X", "\[Zeta]"], ",", 
-          SuperscriptBox["h", "\[Zeta]"]}], "]"}]}], "}"}]}]},
+          SuperscriptBox["g", "\[Zeta]"]}], "]"}]}], "}"}]}]},
     {"\[Placeholder]", "=", 
      RowBox[{
       RowBox[{"\[ScriptCapitalD]", "[", 
        SuperscriptBox["X", "\[Zeta]"], "]"}], " ", 
       RowBox[{"\[ScriptCapitalD]", "[", 
-       SuperscriptBox["h", "\[Zeta]"], "]"}], " ", "exp", 
+       SuperscriptBox["g", "\[Zeta]"], "]"}], " ", "exp", 
       RowBox[{
        RowBox[{"{", 
         RowBox[{"\[ImaginaryI]", " ", 
@@ -713,7 +712,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.675327970677571*^9, 3.675327985371231*^9}, {
    3.675328170210043*^9, 3.675328219868634*^9}, 3.675328264926495*^9, {
    3.675328416115071*^9, 3.675328430378625*^9}, 3.675328688472855*^9, 
-   3.675328738383292*^9}],
+   3.675328738383292*^9, {3.676931742007526*^9, 3.67693174960274*^9}}],
 
 Cell[TextData[{
  "Integrating ",
@@ -722,25 +721,22 @@ Cell[TextData[{
    RowBox[{"\[Integral]", 
     RowBox[{
      RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}], " ", 
-     RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}]}]}], TraditionalForm]]],
  " on both sides and replacing ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SuperscriptBox["X", "\[Zeta]"], "\[Rule]", "X"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["X", "\[Zeta]"], "\[Rule]", "X"}], TraditionalForm]]],
  " and ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SuperscriptBox["h", "\[Zeta]"], "\[Rule]", "h"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["g", "\[Zeta]"], "\[Rule]", "g"}], TraditionalForm]]],
  " since they are dummy, get"
 }], "Text",
  CellChangeTimes->{{3.675328431549182*^9, 3.67532848789734*^9}, {
   3.675328580963619*^9, 3.675328605475566*^9}, {3.67532865810843*^9, 
-  3.675328661267708*^9}}],
+  3.675328661267708*^9}, {3.676931775725122*^9, 3.67693178123542*^9}}],
 
 Cell[BoxData[
  FormBox[
@@ -749,16 +745,16 @@ Cell[BoxData[
     RowBox[{"\[Integral]", 
      RowBox[{
       RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}], " ", 
-      RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}], " ", "exp", 
+      RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}], " ", "exp", 
       RowBox[{"{", 
        RowBox[{"\[ImaginaryI]", " ", 
         RowBox[{
          SubscriptBox["S", "p"], "[", 
-         RowBox[{"X", ",", "h"}], "]"}]}], "}"}]}]}], "=", 
+         RowBox[{"X", ",", "g"}], "]"}]}], "}"}]}]}], "=", 
     RowBox[{
      RowBox[{"\[Integral]", 
       RowBox[{
-       RowBox[{"\[ScriptCapitalD]", "[", "h", "]"}], 
+       RowBox[{"\[ScriptCapitalD]", "[", "g", "]"}], 
        RowBox[{"\[Integral]", 
         RowBox[{
          RowBox[{"\[ScriptCapitalD]", "[", "X", "]"}], " ", "exp", 
@@ -776,7 +772,8 @@ Cell[BoxData[
            SubscriptBox["S", "NG"], "[", "X", "]"}]}], "}"}]}]}]}]}]}], " ", 
    ","}], TraditionalForm]], "EquationNumbered",
  CellChangeTimes->{{3.675328498346668*^9, 3.67532854632596*^9}, {
-  3.67532861583612*^9, 3.675328627043895*^9}}],
+  3.67532861583612*^9, 3.675328627043895*^9}, {3.67693179177019*^9, 
+  3.676931795300717*^9}}],
 
 Cell["which is what we want.", "Text",
  CellChangeTimes->{{3.675328628032163*^9, 3.675328632768024*^9}}],
@@ -784,8 +781,8 @@ Cell["which is what we want.", "Text",
 Cell["Q.E.D.", "Text",
  CellChangeTimes->{{3.675328633158091*^9, 3.675328634812672*^9}, {
   3.675328838109095*^9, 3.675328838119498*^9}}]
-}, Closed]]
-}, Closed]],
+}, Open  ]]
+}, Open  ]],
 
 Cell[TextData[{
  StyleBox["1.34",
@@ -804,7 +801,7 @@ Cell[TextData[{
 }], "Text",
  CellChangeTimes->{{3.675328840623476*^9, 3.675328884023531*^9}, 
    3.67532892675351*^9}]
-}, Closed]],
+}, Open  ]],
 
 Cell[TextData[{
  StyleBox["1.4",
@@ -813,7 +810,7 @@ Cell[TextData[{
 wicked, so is at here (c.f. section 3.2)!."
 }], "Text",
  CellChangeTimes->{{3.675328944055962*^9, 3.675329054568962*^9}}]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1543,43 +1540,148 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    SubscriptBox["\[CapitalDelta]", "FP"], TraditionalForm]]],
- ", i.e. equ.(3.3.10)~equ.(3.3.22):"
+ ", i.e. equ.(3.3.10)~equ.(3.3.22) (we employ the derive in the addenda on \
+PST\[CloseCurlyQuote]s website):"
 }], "Text",
  CellChangeTimes->{{3.675329101047134*^9, 3.675329120710104*^9}, {
    3.675329157479026*^9, 3.67532916727085*^9}, 3.675375264797947*^9, {
-   3.675381016212098*^9, 3.675381022106236*^9}}],
+   3.675381016212098*^9, 3.675381022106236*^9}, {3.676933064158765*^9, 
+   3.676933112052535*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  StyleBox["3.1",
   FontWeight->"Bold"],
- " ",
- "Define ",
+ " Define ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[CapitalDelta]", "FP"], TraditionalForm]],
+   SubscriptBox["\[CapitalDelta]", "FP"], TraditionalForm]]],
+ " by, for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ForAll]", 
+    RowBox[{"g", "\[Element]", 
+     RowBox[{"\[GothicO]\[GothicB]", "(", 
+      OverscriptBox["g", "^"], ")"}]}]}], TraditionalForm]],
   FormatType->"TraditionalForm"],
- " as"
+ ","
 }], "Text",
- CellChangeTimes->{{3.675383214846022*^9, 3.675383244274565*^9}}],
+ CellChangeTimes->{{3.675383214846022*^9, 3.675383244274565*^9}, {
+  3.676935838418585*^9, 3.676935838584806*^9}, {3.676935871454519*^9, 
+  3.676935885986142*^9}}],
 
 Cell[BoxData[
  FormBox[
   RowBox[{"1", "=", 
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"\[ScriptCapitalD]", "[", "\[Zeta]", "]"}], " ", 
+     RowBox[{
+      SubscriptBox["\[CapitalDelta]", "FP"], "[", 
+      SuperscriptBox["g", "\[Zeta]"], "]"}], " ", 
+     RowBox[{
+      RowBox[{"\[Delta]", "(", 
+       RowBox[{
+        SuperscriptBox["g", "\[Zeta]"], "-", 
+        OverscriptBox["g", "^"]}], ")"}], " ", "."}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.675382469975917*^9, 3.675382505763282*^9}, {
+  3.676933118783653*^9, 3.676933132892024*^9}}],
+
+Cell[TextData[{
+ "This definition is equivalent to, ",
+ "for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ForAll]", 
+    RowBox[{"g", "\[Element]", 
+     RowBox[{"\[GothicO]\[GothicB]", "(", 
+      OverscriptBox["g", "^"], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.676935896933877*^9, 3.676935905058517*^9}, {
+  3.676935949660104*^9, 3.676935950211814*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox[
+     SubscriptBox["\[CapitalDelta]", "FP"], 
+     RowBox[{"-", "1"}]], "[", 
+    OverscriptBox["g", "^"], "]"}], ":=", 
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"\[ScriptCapitalD]", "[", "\[Zeta]", "]"}], " ", 
+     RowBox[{
+      RowBox[{"\[Delta]", "(", 
+       RowBox[{
+        SuperscriptBox["g", "\[Zeta]"], "-", 
+        OverscriptBox["g", "^"]}], ")"}], " ", "."}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.675382469975917*^9, 3.675382505763282*^9}, {
+  3.676933118783653*^9, 3.676933132892024*^9}, {3.676935913810421*^9, 
+  3.676935929700532*^9}}],
+
+Cell[TextData[{
+ "To make this definition self-consist, it shall be checked that, for ",
+ "for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[ForAll]", 
+     SubscriptBox["g", "1"]}], ",", 
+    RowBox[{
+     SubscriptBox["g", "2"], "\[Element]", 
+     RowBox[{"\[GothicO]\[GothicB]", "(", 
+      OverscriptBox["g", "^"], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.676935973916648*^9, 3.676936017444979*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"\[ScriptCapitalD]", "[", "\[Zeta]", "]"}], " ", 
+     RowBox[{"\[Delta]", "(", 
+      RowBox[{
+       SubsuperscriptBox["g", "1", "\[Zeta]"], "-", 
+       OverscriptBox["g", "^"]}], ")"}]}]}], "=", 
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"\[ScriptCapitalD]", "[", "\[Zeta]", "]"}], " ", 
+     RowBox[{
+      RowBox[{"\[Delta]", "(", 
+       RowBox[{
+        SubsuperscriptBox["g", "2", "\[Zeta]"], "-", 
+        OverscriptBox["g", "^"]}], ")"}], " ", "."}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.676936024070959*^9, 3.676936043424182*^9}}],
+
+Cell[TextData[{
+ StyleBox["This definition also meets problems (we find it is just ",
+  Background->RGBColor[1, 0.85, 0.85]],
+ Cell[BoxData[
+  FormBox[
    RowBox[{
     RowBox[{
-     SubscriptBox["\[CapitalDelta]", "FP"], "[", "g", "]"}], " ", 
-    RowBox[{"\[Integral]", 
-     RowBox[{
-      RowBox[{"\[ScriptCapitalD]", "[", "\[Zeta]", "]"}], " ", 
-      RowBox[{
-       RowBox[{"\[Delta]", "(", 
-        RowBox[{"g", "-", 
-         SuperscriptBox[
-          OverscriptBox["g", "^"], "\[Zeta]"]}], ")"}], " ", "."}]}]}]}]}], 
-  TraditionalForm]], "EquationNumbered",
- CellChangeTimes->{{3.675382469975917*^9, 3.675382505763282*^9}}],
+     SubscriptBox["\[CapitalDelta]", "FP"], "[", 
+     SubsuperscriptBox["g", "1", "\[Zeta]"], "]"}], 
+    OverscriptBox["=", "?"], 
+    RowBox[{
+     SubscriptBox["\[CapitalDelta]", "FP"], "[", 
+     SubsuperscriptBox["g", "2", "\[Zeta]"], "]"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 0.85, 0.85]],
+ StyleBox[", the same problem in the proof of following theorem)!",
+  Background->RGBColor[1, 0.85, 0.85]]
+}], "Text",
+ CellChangeTimes->{{3.676936552474005*^9, 3.676936637264311*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1609,15 +1711,15 @@ Cell[TextData[{
       RowBox[{"\[PartialD]", "G"}], "/", 
       RowBox[{"\[PartialD]", "\[Zeta]"}]}], "|", 
      RowBox[{"(", 
-      RowBox[{"0", ",", 
-       OverscriptBox["g", "^"]}], ")"}]}]}], TraditionalForm]], 
+      RowBox[{"0", ",", "g"}], ")"}]}]}], TraditionalForm]], 
   "EquationNumbered",
   CellChangeTimes->{{3.675383103394215*^9, 3.67538313248126*^9}}],
  "."
 }], "Lemma",
  CellChangeTimes->{{3.675383214846022*^9, 3.675383234737686*^9}, {
   3.675383265203486*^9, 3.675383266193481*^9}, {3.675383298619366*^9, 
-  3.675383324108797*^9}, {3.675995089787095*^9, 3.675995091491721*^9}}],
+  3.675383324108797*^9}, {3.675995089787095*^9, 3.675995091491721*^9}, {
+  3.67693315303636*^9, 3.676933153324947*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1775,7 +1877,7 @@ Cell["which is what we want.", "Text",
 Cell["Q.E.D.", "Text",
  CellChangeTimes->{{3.675383469041738*^9, 3.675383470288843*^9}}]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -2151,7 +2253,6 @@ Cell[TextData[{
       RowBox[{"0", ",", 
        SuperscriptBox[
         OverscriptBox["g", "^"], "\[Zeta]"]}], ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",
   Background->RGBColor[1, 0.85, 0.85]],
  StyleBox[" and ",
   Background->RGBColor[1, 0.85, 0.85]],
@@ -2168,7 +2269,6 @@ Cell[TextData[{
      RowBox[{"(", 
       RowBox[{"0", ",", 
        OverscriptBox["g", "^"]}], ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",
   Background->RGBColor[1, 0.85, 0.85]],
  StyleBox[", then why should ",
   Background->RGBColor[1, 0.85, 0.85]],
@@ -2190,7 +2290,6 @@ Cell[TextData[{
      RowBox[{"(", 
       RowBox[{"0", ",", 
        OverscriptBox["g", "^"]}], ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",
   Background->RGBColor[1, 0.85, 0.85]],
  StyleBox["?",
   Background->RGBColor[1, 0.85, 0.85]],
@@ -2568,7 +2667,7 @@ Cell["\<\
 which is consist with equ.(3.3.21).\
 \>", "Text",
  CellChangeTimes->{{3.675387027749198*^9, 3.675387034266481*^9}}]
-}, Closed]]
+}, Open  ]]
 }, Open  ]],
 
 Cell[TextData[{
@@ -2581,7 +2680,7 @@ Cell[TextData[{
 Cell["See the proof of thm in 3.2.", "Text",
  CellChangeTimes->{{3.675995060040281*^9, 3.675995076025433*^9}}]
 },
-WindowSize->{1024, 549},
+WindowSize->{1024, 600},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>FEPrivate`If[
   FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
@@ -2602,157 +2701,163 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[579, 22, 330, 8, 28, "Text"],
-Cell[912, 32, 736, 12, 143, "Text"],
+Cell[912, 32, 736, 12, 115, "Text"],
 Cell[CellGroupData[{
-Cell[1673, 48, 726, 20, 72, "Text"],
-Cell[2402, 70, 657, 19, 72, "Text"],
-Cell[3062, 91, 913, 28, 72, "Text"]
+Cell[1673, 48, 726, 20, 58, "Text"],
+Cell[2402, 70, 657, 19, 58, "Text"],
+Cell[3062, 91, 859, 25, 58, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3958, 121, 242, 6, 28, "Text"],
+Cell[4203, 129, 229, 5, 28, "Text"],
+Cell[4435, 136, 765, 23, 55, "EquationNumbered"],
+Cell[5203, 161, 371, 9, 28, "Text"],
+Cell[5577, 172, 103, 1, 28, "Text"],
+Cell[5683, 175, 1026, 29, 55, "EquationNumbered"],
+Cell[6712, 206, 618, 15, 30, "Text"],
+Cell[CellGroupData[{
+Cell[7355, 225, 245, 6, 28, "Text"],
+Cell[7603, 233, 772, 23, 55, "EquationNumbered"]
+}, Open  ]],
+Cell[8390, 259, 840, 27, 60, "Text"],
+Cell[CellGroupData[{
+Cell[9255, 290, 208, 5, 28, "Text"],
+Cell[CellGroupData[{
+Cell[9488, 299, 836, 18, 33, "Theorem"],
+Cell[10327, 319, 973, 25, 55, "EquationNumbered"]
+}, Open  ]],
+Cell[11315, 347, 707, 22, 30, "Text"],
+Cell[CellGroupData[{
+Cell[12047, 373, 271, 3, 28, "Text"],
+Cell[12321, 378, 1679, 55, 83, "Text"],
+Cell[14003, 435, 541, 14, 41, "EquationNumbered"],
+Cell[14547, 451, 964, 34, 39, "Text"],
+Cell[15514, 487, 668, 17, 43, "EquationNumbered"],
+Cell[16185, 506, 613, 16, 53, "Text"],
+Cell[16801, 524, 1336, 36, 60, "EquationNumbered"],
+Cell[18140, 562, 1803, 59, 94, "Text"],
+Cell[19946, 623, 1499, 50, 68, "Text"],
+Cell[21448, 675, 1566, 39, 69, "EquationNumbered"],
+Cell[23017, 716, 747, 22, 34, "Text"],
+Cell[23767, 740, 1290, 35, 55, "EquationNumbered"],
+Cell[25060, 777, 104, 1, 28, "Text"],
+Cell[25167, 780, 137, 2, 28, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[25331, 786, 463, 16, 30, "Text"]
+}, Open  ]],
+Cell[25809, 805, 253, 6, 28, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26099, 816, 153, 5, 28, "Text"],
+Cell[CellGroupData[{
+Cell[26277, 825, 150, 5, 28, "Text"],
+Cell[26430, 832, 1629, 54, 132, "Text"],
+Cell[28062, 888, 441, 14, 50, "Text"]
+}, Closed]],
+Cell[28518, 905, 878, 31, 57, "Text"],
+Cell[CellGroupData[{
+Cell[29421, 940, 883, 25, 32, "Text"],
+Cell[30307, 967, 544, 13, 62, "Text"],
+Cell[30854, 982, 669, 18, 82, "EquationNumbered"],
+Cell[31526, 1002, 86, 1, 53, "Text"],
+Cell[31615, 1005, 346, 11, 81, "EquationNumbered"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[4012, 124, 242, 6, 31, "Text"],
-Cell[4257, 132, 229, 5, 35, "Text"],
-Cell[4489, 139, 765, 23, 68, "EquationNumbered"],
-Cell[5257, 164, 371, 9, 35, "Text"],
-Cell[5631, 175, 103, 1, 35, "Text"],
-Cell[5737, 178, 936, 28, 68, "EquationNumbered"],
-Cell[6676, 208, 657, 17, 65, "Text"],
+Cell[31998, 1021, 257, 7, 25, "Text"],
+Cell[32258, 1030, 1061, 33, 58, "Lemma"],
 Cell[CellGroupData[{
-Cell[7358, 229, 245, 6, 35, "Text"],
-Cell[7606, 237, 724, 22, 68, "EquationNumbered"]
-}, Closed]],
-Cell[8345, 262, 893, 30, 75, "Text"],
-Cell[CellGroupData[{
-Cell[9263, 296, 208, 5, 35, "Text"],
-Cell[CellGroupData[{
-Cell[9496, 305, 823, 19, 41, "Theorem"],
-Cell[10322, 326, 923, 24, 68, "EquationNumbered"]
-}, Closed]],
-Cell[11260, 353, 790, 25, 33, "Text"],
-Cell[CellGroupData[{
-Cell[12075, 382, 1850, 62, 111, "Text"],
-Cell[13928, 446, 492, 13, 51, "EquationNumbered"],
-Cell[14423, 461, 977, 34, 48, "Text"],
-Cell[15403, 497, 647, 17, 53, "EquationNumbered"],
-Cell[16053, 516, 613, 16, 66, "Text"],
-Cell[16669, 534, 1101, 30, 75, "EquationNumbered"],
-Cell[17773, 566, 1754, 58, 117, "Text"],
-Cell[19530, 626, 1389, 48, 48, "Text"],
-Cell[20922, 676, 1521, 39, 86, "EquationNumbered"],
-Cell[22446, 717, 801, 25, 42, "Text"],
-Cell[23250, 744, 1242, 34, 68, "EquationNumbered"],
-Cell[24495, 780, 104, 1, 35, "Text"],
-Cell[24602, 783, 137, 2, 35, "Text"]
-}, Closed]]
-}, Closed]],
-Cell[24766, 789, 463, 16, 33, "Text"]
-}, Closed]],
-Cell[25244, 808, 253, 6, 31, "Text"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[25534, 819, 153, 5, 25, "Text"],
-Cell[CellGroupData[{
-Cell[25712, 828, 150, 5, 28, "Text"],
-Cell[25865, 835, 1629, 54, 85, "Text"],
-Cell[27497, 891, 441, 14, 32, "Text"]
-}, Closed]],
-Cell[27953, 908, 878, 31, 57, "Text"],
-Cell[CellGroupData[{
-Cell[28856, 943, 883, 25, 32, "Text"],
-Cell[29742, 970, 544, 13, 40, "Text"],
-Cell[30289, 985, 669, 18, 53, "EquationNumbered"],
-Cell[30961, 1005, 86, 1, 35, "Text"],
-Cell[31050, 1008, 346, 11, 52, "EquationNumbered"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[31433, 1024, 257, 7, 25, "Text"],
-Cell[31693, 1033, 1061, 33, 58, "Lemma"],
-Cell[CellGroupData[{
-Cell[32779, 1070, 869, 27, 33, "Text"],
-Cell[33651, 1099, 1091, 32, 71, "EquationNumbered"],
-Cell[34745, 1133, 1936, 63, 77, "Text"],
-Cell[36684, 1198, 1459, 47, 73, "Text"],
-Cell[38146, 1247, 925, 28, 81, "EquationNumbered"],
-Cell[39074, 1277, 94, 1, 35, "Text"],
-Cell[39171, 1280, 870, 27, 81, "EquationNumbered"],
-Cell[40044, 1309, 1771, 60, 68, "Text"],
-Cell[41818, 1371, 562, 15, 98, "EquationNumbered"],
-Cell[42383, 1388, 572, 19, 37, "Text"],
-Cell[42958, 1409, 516, 15, 41, "Text"],
-Cell[43477, 1426, 1094, 33, 81, "EquationNumbered"],
-Cell[44574, 1461, 1195, 40, 71, "Text"],
-Cell[45772, 1503, 713, 22, 73, "EquationNumbered"],
-Cell[46488, 1527, 104, 1, 35, "Text"],
-Cell[46595, 1530, 88, 1, 35, "Text"]
+Cell[33344, 1067, 869, 27, 33, "Text"],
+Cell[34216, 1096, 1091, 32, 110, "EquationNumbered"],
+Cell[35310, 1130, 1936, 63, 120, "Text"],
+Cell[37249, 1195, 1459, 47, 113, "Text"],
+Cell[38711, 1244, 925, 28, 126, "EquationNumbered"],
+Cell[39639, 1274, 94, 1, 53, "Text"],
+Cell[39736, 1277, 870, 27, 126, "EquationNumbered"],
+Cell[40609, 1306, 1771, 60, 106, "Text"],
+Cell[42383, 1368, 562, 15, 152, "EquationNumbered"],
+Cell[42948, 1385, 572, 19, 57, "Text"],
+Cell[43523, 1406, 516, 15, 63, "Text"],
+Cell[44042, 1423, 1094, 33, 126, "EquationNumbered"],
+Cell[45139, 1458, 1195, 40, 110, "Text"],
+Cell[46337, 1500, 713, 22, 113, "EquationNumbered"],
+Cell[47053, 1524, 104, 1, 53, "Text"],
+Cell[47160, 1527, 88, 1, 53, "Text"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[46744, 1538, 402, 11, 30, "Text"],
+Cell[47309, 1535, 526, 13, 52, "Text"],
 Cell[CellGroupData[{
-Cell[47171, 1553, 279, 11, 30, "Text"],
-Cell[47453, 1566, 526, 15, 55, "EquationNumbered"],
+Cell[47860, 1552, 572, 19, 32, "Text"],
+Cell[48435, 1573, 588, 16, 55, "EquationNumbered"],
+Cell[49026, 1591, 416, 13, 32, "Text"],
+Cell[49445, 1606, 663, 19, 55, "EquationNumbered"],
+Cell[50111, 1627, 476, 15, 32, "Text"],
+Cell[50590, 1644, 674, 19, 55, "EquationNumbered"],
+Cell[51267, 1665, 703, 18, 63, "Text"],
 Cell[CellGroupData[{
-Cell[48004, 1585, 1134, 34, 35, "Lemma"],
+Cell[51995, 1687, 1154, 34, 34, "Lemma"],
 Cell[CellGroupData[{
-Cell[49163, 1623, 920, 27, 43, "Text"],
-Cell[50086, 1652, 1495, 41, 76, "EquationNumbered"],
-Cell[51584, 1695, 1675, 57, 78, "Text"],
-Cell[53262, 1754, 505, 15, 73, "EquationNumbered"],
-Cell[53770, 1771, 104, 1, 35, "Text"],
-Cell[53877, 1774, 88, 1, 35, "Text"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[54014, 1781, 421, 12, 30, "Corollary"],
-Cell[54438, 1795, 371, 11, 48, "EquationNumbered"]
-}, Closed]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[54858, 1812, 213, 6, 28, "Text"],
-Cell[CellGroupData[{
-Cell[55096, 1822, 1177, 35, 31, "Theorem"],
-Cell[56276, 1859, 801, 24, 94, "EquationNumbered"],
-Cell[57080, 1885, 89, 1, 28, "Theorem"],
-Cell[57172, 1888, 956, 27, 55, "EquationNumbered"],
-Cell[58131, 1917, 445, 12, 32, "Theorem"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[58613, 1934, 225, 3, 28, "Text"],
-Cell[58841, 1939, 188, 3, 28, "Text"],
-Cell[59032, 1944, 757, 20, 55, "EquationNumbered"],
-Cell[59792, 1966, 229, 7, 28, "Text"],
-Cell[60024, 1975, 433, 12, 55, "EquationNumbered"],
-Cell[60460, 1989, 229, 7, 30, "Text"],
-Cell[60692, 1998, 749, 20, 55, "EquationNumbered"],
-Cell[61444, 2020, 89, 1, 28, "Text"],
-Cell[61536, 2023, 988, 28, 55, "EquationNumbered"],
-Cell[62527, 2053, 375, 13, 30, "Text"],
-Cell[62905, 2068, 1059, 30, 55, "EquationNumbered"],
-Cell[63967, 2100, 335, 9, 28, "Text"],
-Cell[64305, 2111, 697, 21, 59, "EquationNumbered"],
-Cell[65005, 2134, 1930, 64, 64, "Text"],
-Cell[66938, 2200, 251, 8, 28, "Text"],
-Cell[67192, 2210, 778, 23, 42, "EquationNumbered"],
-Cell[67973, 2235, 88, 1, 28, "Text"],
-Cell[68064, 2238, 2107, 57, 100, "EquationNumbered"],
-Cell[70174, 2297, 104, 1, 28, "Text"],
-Cell[70281, 2300, 88, 1, 28, "Text"]
+Cell[53174, 1725, 920, 27, 35, "Text"],
+Cell[54097, 1754, 1495, 41, 61, "EquationNumbered"],
+Cell[55595, 1797, 1675, 57, 67, "Text"],
+Cell[57273, 1856, 505, 15, 59, "EquationNumbered"],
+Cell[57781, 1873, 104, 1, 28, "Text"],
+Cell[57888, 1876, 88, 1, 28, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[70418, 2307, 384, 13, 32, "Text"],
-Cell[70805, 2322, 824, 25, 35, "Text"],
-Cell[71632, 2349, 1614, 48, 73, "EquationNumbered"],
-Cell[73249, 2399, 931, 31, 45, "Text"],
-Cell[74183, 2432, 570, 14, 38, "Text"],
-Cell[74756, 2448, 1756, 48, 73, "EquationNumbered"],
-Cell[76515, 2498, 864, 23, 71, "Text"],
-Cell[77382, 2523, 1522, 41, 73, "EquationNumbered"],
-Cell[78907, 2566, 125, 3, 35, "Text"]
+Cell[58025, 1883, 421, 12, 33, "Corollary"],
+Cell[58449, 1897, 371, 11, 75, "EquationNumbered"]
 }, Closed]]
 }, Open  ]],
-Cell[79059, 2573, 150, 5, 28, "Text"],
-Cell[79212, 2580, 110, 1, 28, "Text"]
+Cell[CellGroupData[{
+Cell[58869, 1914, 213, 6, 28, "Text"],
+Cell[CellGroupData[{
+Cell[59107, 1924, 1177, 35, 31, "Theorem"],
+Cell[60287, 1961, 801, 24, 94, "EquationNumbered"],
+Cell[61091, 1987, 89, 1, 28, "Theorem"],
+Cell[61183, 1990, 956, 27, 55, "EquationNumbered"],
+Cell[62142, 2019, 445, 12, 32, "Theorem"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[62624, 2036, 225, 3, 28, "Text"],
+Cell[62852, 2041, 188, 3, 28, "Text"],
+Cell[63043, 2046, 757, 20, 55, "EquationNumbered"],
+Cell[63803, 2068, 229, 7, 28, "Text"],
+Cell[64035, 2077, 433, 12, 55, "EquationNumbered"],
+Cell[64471, 2091, 229, 7, 30, "Text"],
+Cell[64703, 2100, 749, 20, 55, "EquationNumbered"],
+Cell[65455, 2122, 89, 1, 28, "Text"],
+Cell[65547, 2125, 988, 28, 55, "EquationNumbered"],
+Cell[66538, 2155, 375, 13, 30, "Text"],
+Cell[66916, 2170, 1059, 30, 55, "EquationNumbered"],
+Cell[67978, 2202, 335, 9, 28, "Text"],
+Cell[68316, 2213, 697, 21, 59, "EquationNumbered"],
+Cell[69016, 2236, 1831, 61, 64, "Text"],
+Cell[70850, 2299, 251, 8, 28, "Text"],
+Cell[71104, 2309, 778, 23, 42, "EquationNumbered"],
+Cell[71885, 2334, 88, 1, 28, "Text"],
+Cell[71976, 2337, 2107, 57, 100, "EquationNumbered"],
+Cell[74086, 2396, 104, 1, 28, "Text"],
+Cell[74193, 2399, 88, 1, 28, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74330, 2406, 384, 13, 32, "Text"],
+Cell[74717, 2421, 824, 25, 28, "Text"],
+Cell[75544, 2448, 1614, 48, 59, "EquationNumbered"],
+Cell[77161, 2498, 931, 31, 36, "Text"],
+Cell[78095, 2531, 570, 14, 31, "Text"],
+Cell[78668, 2547, 1756, 48, 59, "EquationNumbered"],
+Cell[80427, 2597, 864, 23, 57, "Text"],
+Cell[81294, 2622, 1522, 41, 59, "EquationNumbered"],
+Cell[82819, 2665, 125, 3, 28, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[82971, 2672, 150, 5, 28, "Text"],
+Cell[83124, 2679, 110, 1, 28, "Text"]
 }
 ]
 *)

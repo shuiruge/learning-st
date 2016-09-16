@@ -1,4 +1,7 @@
 # learning-st
+
+ATTENTION: this repo. has been dropped, since I turned from Pol's big book to GSW.
+
 Notes taken while reading ST.
 
 **This is a list of remarks, explicit derivations, and problems on the content in the big book taken while reading it, rather than a re-declaration and a re-arrangement.**
